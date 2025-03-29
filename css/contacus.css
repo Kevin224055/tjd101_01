@@ -1,0 +1,148 @@
+@import url(reset.css);
+@import url(hf.css);
+
+.ph{
+    position: relative;
+}
+
+.ph img{
+   width: 1200px;
+   display: block;
+   margin: 0 auto;
+}
+
+.ph p{
+    position: absolute;
+    top: 130px;
+    left: 480px;
+    font-size: 62px;
+    color: white;
+    font-weight: bold;
+    
+  
+}
+
+main .mainp p{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* border: 1px solid green; */
+    padding-left: 90px;
+    color: #A38368;
+}
+
+
+
+.formcontain{
+    font-size: 20px;
+}
+.formcontain form{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    margin-top: 50px;
+    /* border:1px solid red; */
+    /* flex-direction: column;
+    justify-content: center; */
+    
+    
+}
+
+.name{
+    /* border: 1px solid blue; */
+    /* padding-left: 40px; */
+    margin: 0 auto;
+    padding-right: 5px;
+
+}
+
+.together{
+    padding-top: 30px;
+}
+.downform section{
+    padding-top: 30px;
+}
+
+/* .formcontain form label{
+    border:1px solid black;
+    width: 900px;
+} */
+.downform{
+  width: 700px;
+  /* border:1px solid green; */
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+}
+.formcontain form section input{
+   border:1px solid #A38368;
+}
+.together{
+    /* border: 1px solid yellow; */
+    
+}
+.nameinput{
+    width: 300px;
+    height: 25px;
+}
+.fm{
+    float: right;
+    margin-right: 100px;
+    padding-left: 20px;
+}
+
+
+.together input{
+    width: 300px;
+}
+
+.downform label{
+    width: 400px;
+}
+.downform input{
+    width: 300px;
+    height: 25px;
+}
+.downform .text{
+ display: flex;
+ /* border: 1px solid red; */
+margin-bottom: 20px;
+
+}
+.downform .text label{
+    /* border:1px solid green; */
+    width: 80px;
+    padding-right: 8px;
+}
+.downform .text textarea{
+  border: 1px solid #A38368;
+  width: 500px;
+  height: 200px;
+}
+
+
+.formcontain button{
+    width: 100px;
+    margin:0 auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    background-color: #D4BAA3;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    padding:5px 0px;
+    color: #A38368;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+
+
+.formcontain {
+    color: #A38368;
+}
+
+

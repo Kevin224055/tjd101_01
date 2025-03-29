@@ -1,0 +1,55 @@
+@import url(reset.css);
+@import url(hf.css);
+
+/* ---------------優惠活動 ----------------------*/
+
+/* img{
+    display: block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+} */
+
+
+.activityff{
+    display: flex;
+    width: 800px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    background-color:#D4BAA3;
+    border-bottom-right-radius:32px;
+    margin-bottom: 20px;
+}
+
+.publicity{
+    width: 400px;
+    /* border: 1px solid gold; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+   padding-top: 20px;
+}
+.publicity p{
+    color: #A38368;
+ padding-top: 20px;  
+   
+}
+
+.activityff img{
+    width: 300px;
+    display: block;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.checkmore{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
+    color: #A38368;
+}

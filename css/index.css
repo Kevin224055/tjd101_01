@@ -1,0 +1,506 @@
+@import url(reset.css);
+body{
+    margin: 0 auto;
+    width: 1200px;
+    font-family: Arial;
+    background-image: url(../img/bgimage.png);
+    /* border: 5px solid red; */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+    color: #A38368;
+    margin-bottom: 20px;
+ }
+/* ------------------------------- 導覽列------------------------------- */
+nav{
+    /* border: 1px solid blue; */
+    width: 1200px;
+    background-color: #C29186;
+   
+    }
+nav section{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+width: 800px;
+display: flex;
+/* border: 1px solid red; */
+}
+nav ul li{
+    width: 100px;
+    align-content: center;
+}
+nav img{
+   width: 100px;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+ }
+ .wrapper .fa-cart-shopping{
+
+font-size: 30px;
+color: #945f31;
+ }
+ .wrapper li a{
+    text-align: center;
+    width: 70px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+ }
+ .wrapper li a:hover{
+    
+ }
+ /* ------------------------------- main------------------------------- */
+ /* ---------------------------主打商品--------------------------- */
+ main{
+    width: 1200px;
+    /* border: 1px solid red; */
+    /* margin-bottom: 50px; */
+ }
+ main section img{
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    
+ }
+
+ .mainProuduct{
+width: 900px;
+/* height: 420px; */
+background-color: #D4BAA3;
+margin-bottom: 52px;
+margin: 0 auto;
+margin-bottom: 40px;
+ }
+ 
+ .mainProuduct ul{
+   display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    margin: 0 auto;
+   
+     }
+.mainProuduct li{
+    width: 400px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    margin-bottom: 50px;
+    color: #A38368;
+    font-size:20px;
+
+          }
+ .mainProuduct img{
+ width: 200px;
+ padding:50px;
+ border-radius: 50%;
+ }
+
+ /* -------------------------------限時搶購 mainTime------------------------------- */
+.Time{
+    width: 900px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-color:#D4BAA3;
+    display: flex;
+    flex-direction: column;
+    
+}
+.settime{
+    display:flex;
+    justify-content: start;
+
+}
+.over{
+width: 100px;
+height: 30px;
+background-color: #C29186;
+border-radius: 8px;
+line-height: 30px;
+text-align: center;
+ padding-right: 5px; 
+ padding-left: 10px;
+ margin-left: 50px;
+margin-top: 10px; 
+margin-bottom: 10px; 
+color: white;
+font-size: 16px;
+margin-right: 20px;
+/* border: 1px solid red; */
+}
+.strin{
+     width: 160px;
+     height: 30px;
+    background-color: #C29186;
+    border-radius: 8px; 
+   margin-top: 10px;
+}
+.strin span{
+    width: 200px;
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+   line-height: 30px;
+  padding-left: 15px;
+}
+
+/* --------------------禮盒 ---------------*/
+.Timeph{
+    display: flex;
+    
+}
+
+.Timeph ul{
+    width: 900px;
+    display: flex;
+margin: 0 auto;
+/* border: 1px solid black; */
+text-align: center;
+ 
+  
+
+}
+.Timeph li{
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 170px;
+   
+    flex-direction: column; 
+    align-items: center; 
+    /* text-align: center; */
+    
+    padding: 0 10px;
+    margin-bottom: 30px;
+    
+    
+}
+.Timeph li p{
+    padding-top: 10px;
+    
+    width: 80px;
+    height: 20px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 20px;
+   
+}
+
+.button{
+    width: 110px;
+    padding-left: 30px;
+    display: flex;
+}
+.button a{
+    margin-right: 10px;
+  
+}
+
+.fa-heart{
+    padding-top: 11px;
+    padding-right: 10px;
+}
+.price {
+    width: 100px;
+   padding-left: 25px;
+   display: flex;
+   
+}
+.Timeph.price p{
+    font-size: 10px;
+}
+
+
+.price p:nth-child(2){
+font-size: 10px;
+color: gray;
+text-decoration: line-through;
+}
+
+.Timeph li:nth-child(2){
+background-color: white;
+margin-right: 30px;
+margin-left: 30px;
+
+}
+.Timeph li:nth-child(3){
+background-color: white;
+margin-right: 30px;
+margin-left: 30px;
+}
+    .Timeph li:nth-child(4){
+background-color: white;
+margin-right: 30px;
+margin-left: 30px;
+}
+
+
+.fa-chevron-left{
+   margin: auto 0;
+}
+.fa-chevron-right{
+    margin: auto 0;
+}
+.Timeph li section{
+    color: #A38368;
+}
+.Timeph li a{
+    width: 100px;
+    color: #ffffff;
+    display: block;
+    background-color:#C29186;
+    border-radius: 8px;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+ .Time img{
+    width: 150px;
+    display: block;
+    /* border: 1px solid blue; */
+    padding-top: 10px;
+
+}
+/* -------------------------------熱銷商品 maintarget------------------------------- */
+
+/* 1 */
+.maintarget{
+    background-color:#D4BAA3 ;
+    width: 900px;
+  /* border: 1px solid black; */
+  position: relative;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+   margin:0 auto;
+}
+.target{
+    /* border: 1px solid red; */
+
+    /* bottom: 100px;
+    right:10px; */
+}
+
+.cakestrin{
+width: 500px;
+display: block;
+line-height: 200%;
+padding-top: 30px;
+color:#A38368;
+padding-left: 30px;
+/* border: 1px solid red; */
+overflow: hidden;
+}
+.cakestrin h2{
+    width: 500px;
+    font-size:20px;
+    font-weight: bold;
+}
+.cakestrin p{
+        width: 400px;
+        font-size:16px;
+}
+.cakestrin a{
+    display: block;
+    text-decoration: none;
+    width: 35px;
+   float: right;
+  font-size: 16px;
+    /* border: 1px solid red; */
+  color:#A38368;
+}
+
+.target img{
+    /* border: 1px solid yellow; */
+width: 250px;
+border-radius: 8px;
+position: absolute;
+right: 110px;
+top: 60px;
+}
+
+
+/* ---------------------right---------------------------- */
+.maintarget-right{
+    background-color:#D4BAA3 ;
+    width: 900px;
+    /* border: 1px solid black; */
+    position: relative;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    margin: 0 auto;
+    /* margin-left: 230px;  */
+    margin-top: 130px;
+    
+}
+.target-right{
+    /* border: 1px solid red; */
+    bottom: 100px;
+    right:20px;
+  
+}
+
+.cakestrin-right{
+width: 400px;
+display: block;
+
+line-height: 200%;
+padding-top: 30px;
+color:#A38368;
+padding-right: 30px;
+padding-left: 10px;
+margin-left: 430px;
+overflow: hidden;
+}
+.cakestrin-right h2{
+    width: 500px;
+    font-size:20px;
+    font-weight: bold;
+}
+.cakestrin-right p{
+        width: 500px;
+        font-size:16px;
+}
+.cakestrin-right a{
+    display: block;
+    text-decoration: none;
+    width: 35px;
+   float: right;
+    /* border: 1px solid red; */
+  color:#A38368;
+  font-size: 16px;
+}
+
+.target-right img{
+    /* border: 1px solid yellow; */
+width: 250px;
+position: absolute;
+border-radius: 8px;
+left: 110px;
+top: 60px;
+}
+
+
+/* -----------------left ----------------------------*/
+/* 3 */
+.maintarget3{
+   
+    background-color:#D4BAA3 ;
+    width: 900px;
+  /* border: 1px solid black; */
+  position: relative;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    margin:0 auto;
+    margin-top: 130px;
+    
+}
+
+/* -------------------shop picture------------------- */
+
+.shop-picture{
+    margin: 0 auto;
+    margin-top: 130px;
+    width: 900px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    background-color: #D4BAA3;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+   border-top-left-radius: 100px;
+   
+}
+.shop-picture p{
+    box-sizing: border-box;
+    width: 300px;
+    /* background-color: #fff; */
+    padding: 100px 30px;
+    line-height: 150%;
+    color: #A38368;
+    margin-top: 40px;
+    margin-left: 30px;
+  font-size: 16px;
+}
+.shop-picture .img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-picture .img1 img{
+    width: 200px;
+    /* border: 1px solid black; */
+   margin-top: 10px;
+   border-radius: 8px;
+}
+
+.shop-picture .img2 img{
+    width: 200px;
+    /* border: 1px solid blue; */
+margin-left: 20px;
+border-radius: 8px;
+}
+
+/*--------------------- footer------------------- */
+footer{
+    width: 1200px;
+    background-color: #C29186;
+ 
+}
+footer .infm{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+}
+
+footer .left{
+    width: 400px;
+    /* border:1px solid green; */
+    padding-top: 20px;
+}
+
+.left p{
+    padding-top: 20px;
+    font-size: 14px;
+}
+.left p:first-child{
+    font-size: 24px;
+}
+
+footer .right{
+    width: 400px;
+    /* border:1px solid blue; */
+
+ 
+}
+.right ul{
+    display: flex;
+    justify-content:end;
+   
+}
+.right ul li{
+    
+    margin-left: 50px;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.right section p{
+padding-top: 60px;
+font-size: 14px;
+}
+
+footer section:last-child{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
