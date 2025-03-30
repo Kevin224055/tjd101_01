@@ -34,6 +34,11 @@ main .bg img{
     
 }
 
+.left-selectdown ul li img{
+  width: 100px;
+  display: block;
+}
+
 .left-select ul li p{
     font-size: 16px;
 }
@@ -58,6 +63,21 @@ margin-bottom: 20px;
 }
 .inside{
     padding-left: 20px;
+    background-color: #C29186;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+    
+}
+
+.left-select ul:hover .inside{
+  max-height: 200px;
+ 
+  
+}
+
+.inside p{
+  color:white;
 }
 .fa-chevron-down{
 padding-top: 2px;
@@ -233,7 +253,7 @@ padding-left: 20px;
 
  /*  */
 /* 基本的 li 樣式 */
-li {
+.productlist li {
   position: relative; /* 為了定位星星 */
  
  
@@ -241,7 +261,7 @@ li {
 }
 
 /* 星星的樣式 */
-li .fa-star {
+.productlist li .fa-star {
   position: absolute;
   right: 0px; /* 距離右邊 */
   top: 0px; /* 距離頂部 */
@@ -251,11 +271,11 @@ li .fa-star {
 }
 
 /* hover 時放大 li 並顯示星星 */
-li:hover {
+.productlist li:hover {
   transform: scale(1.1); /* li 放大 1.1 倍，星星也跟著放大 */
 }
 
-li:hover .fa-star {
+.productlist li:hover .fa-star {
   opacity: 1; /* 顯示星星 */
 }
 
