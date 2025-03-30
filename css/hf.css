@@ -73,10 +73,57 @@ color: #945f31;
     font-size: 14px;
     font-weight: bold;
  }
- .wrapper li a:hover{
-    
- }
 
+
+
+
+
+
+
+ /* 子導覽頁 */
+ li{
+    position: relative;
+    width: 100px;
+}
+
+.inside{
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    
+}
+
+li:hover .inside{
+    display: block;
+    width: 100px;
+  
+}
+
+.inside li {
+    width: 88px;
+    height: 60px;
+    
+    background-color: #C29186;
+    padding: 0;
+    
+}
+nav .inside li a{
+    width: 100px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+}
+li:hover .inside a{
+    width: 100px;
+    background-color: white;
+}
+
+.inside li a:hover{
+    background-color: #C29186;
+}
 
 
 
