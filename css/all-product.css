@@ -63,7 +63,7 @@ margin-bottom: 20px;
 }
 .inside{
     padding-left: 20px;
-    background-color: #C29186;
+    /* background-color: #C29186; */
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease; 
@@ -77,7 +77,7 @@ margin-bottom: 20px;
 }
 
 .inside p{
-  color:white;
+  color:#A38368;
 }
 .fa-chevron-down{
 padding-top: 2px;
