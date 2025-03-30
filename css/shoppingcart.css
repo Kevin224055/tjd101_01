@@ -35,6 +35,9 @@
     clear: both;
     
 }
+.ph img{
+    width: 150px;
+}
 .ph-r{
     width: 364px;
     /* border: 1px solid red; */
