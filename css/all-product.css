@@ -227,6 +227,44 @@ padding-left: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
  }
+
+
+
+
+ /*  */
+/* 基本的 li 樣式 */
+li {
+  position: relative; /* 為了定位星星 */
+ 
+ 
+  transition: transform 0.3s ease; /* li 的放大效果 */
+}
+
+/* 星星的樣式 */
+li .fa-star {
+  position: absolute;
+  right: 0px; /* 距離右邊 */
+  top: 0px; /* 距離頂部 */
+  opacity: 0; /* 預設隱藏 */
+  font-size: 32px; /* 星星大小 */
+  transition: opacity 0.3s ease; /* 星星的淡入效果 */
+}
+
+/* hover 時放大 li 並顯示星星 */
+li:hover {
+  transform: scale(1.1); /* li 放大 1.1 倍，星星也跟著放大 */
+}
+
+li:hover .fa-star {
+  opacity: 1; /* 顯示星星 */
+}
+
+
+
+
+
+
+ 
  /* ----------------------頁數-------------------- */
  .number{
     width: 500px;
