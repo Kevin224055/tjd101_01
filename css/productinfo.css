@@ -136,6 +136,14 @@ display: block;
 }
 
 /* ---------------相關商品-------------------  */
+.cp{
+    font-size: 24px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    color: #A38368;
+    font-weight: bold;
+}
+
 .conectproduct{
     width: 900px;
     /* border: 1px solid red; */
