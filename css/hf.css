@@ -34,7 +34,26 @@ display: flex;
 nav ul li{
     width: 100px;
     align-content: center;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+    display: flex;
 }
+
+
+nav ul li:nth-child(-n+8):hover{
+    background-color: #D4BAA3;
+}
+nav ul li a{
+    display: block;
+    width: 100px;  
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+}
+
+
 nav img{
    width: 100px;
     padding-left: 20px;
