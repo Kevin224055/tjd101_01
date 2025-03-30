@@ -81,27 +81,27 @@ color: #945f31;
 
 
  /* 子導覽頁 */
- li{
+ nav li{
     position: relative;
     width: 100px;
 }
 
-.inside{
+.side{
     width: 100px;
     display: none;
     position: absolute;
     top: 62px;
     left: 0;
-    
+    z-index: 1;
 }
 
-li:hover .inside{
+li:hover .side{
     display: block;
     width: 100px;
   
 }
 
-.inside li {
+.side li {
     width: 88px;
     height: 60px;
     
@@ -109,19 +109,19 @@ li:hover .inside{
     padding: 0;
     
 }
-nav .inside li a{
+nav .side li a{
     width: 100px;
     height: 60px;
     display: block;
     text-align: center;
     line-height: 60px;
 }
-li:hover .inside a{
+ li:hover .side a{
     width: 100px;
     background-color: white;
 }
 
-.inside li a:hover{
+.side li a:hover{
     background-color: #C29186;
 }
 
