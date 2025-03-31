@@ -179,8 +179,8 @@ padding-left: 20px;
  .productlist ul{
     width: 700px;
     /* border: 1px solid yellow; */
-    float: left;
-   
+    /* float: left; */
+    
  }
 
  .productlist ul li{
