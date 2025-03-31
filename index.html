@@ -7,9 +7,14 @@
     <link rel="icon" href="img/Warm Delights logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="js/indexscorlltop.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
+        <!-- 回到最上面 -->
+        <i class="fa-regular fa-circle-up"></i>
         <nav>
             <section>
                 <a href="index.html"><img src="img/Warm Delightsnav.png" alt=""></a>
@@ -265,6 +270,23 @@
     </footer>
     </div>
     
+<!-- <script>
+    $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.fa-circle-up').fadeIn();
+                } else {
+                    $('.fa-circle-up').fadeOut();
+                }
+            });
 
+            $('.fa-circle-up').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        });
+</script> -->
 </body>
 </html>
