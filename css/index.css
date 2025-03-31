@@ -19,17 +19,17 @@ h1{
 
 
  /* 回到最上方 */
- .fa-circle-up {
+ .gotop {
     position: fixed;
-    bottom: 60px;
-    right: 20px;
+    bottom: 170px;
+    right: 100px;
     display: none;
     z-index: 999;
     font-size: 30px;
 }
-.fa-circle-up {
-    width: 150px;
-    height: 150px;
+.gotop {
+    width: 120px;
+    height: 120px;
 }
 
 

@@ -1,13 +1,13 @@
 $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
-            $('.fa-circle-up').fadeIn();
+            $('.gotop').fadeIn();
         } else {
-            $('.fa-circle-up').fadeOut();
+            $('.gotop').fadeOut();
         }
     });
 
-    $('.fa-circle-up').click(function(e) {
+    $('.gotop').click(function(e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
