@@ -195,11 +195,12 @@ padding-left: 20px;
    justify-content: center;
    align-items: center;
    padding: 8px 0px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-right: 10px;
    display: inline-block;
    margin-left: 15px;
-  
+ 
  }
 
  .productlist .button a{
@@ -272,6 +273,8 @@ padding-left: 20px;
 /* hover 時放大 li 並顯示星星 */
 .productlist li:hover {
   transform: scale(1.1); /* li 放大 1.1 倍，星星也跟著放大 */
+  animation: borderAnimation 1.5s infinite;
+  z-index: 100;
 }
 
 .productlist li:hover .fa-star {
@@ -279,6 +282,19 @@ padding-left: 20px;
 }
 
 
+
+/*  */
+@keyframes borderAnimation {
+  0% {
+    box-shadow: 0 0 0 0 #C29186; /* 初始狀態，無邊框 */
+  }
+  50% {
+    box-shadow: 0 0 0 4px #C29186; /* 中間狀態，邊框擴展到最大 */
+  }
+  100% {
+    box-shadow: 0 0 0 0 #C29186; /* 回到初始狀態 */
+  }
+}
 
 
 
