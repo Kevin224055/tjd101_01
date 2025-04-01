@@ -10,12 +10,15 @@ main .bg img{
 /* ----------------------------商品列表----------------------- */
 .productarea{
     margin: 0 auto;
-   font-size: 20px;
+   
    color: #A38368;
    display: flex;
    justify-content: space-around;
    /* border: 1px solid blue; */
    
+}
+.productarea h2{
+  font-size: 24px;
 }
 
 
