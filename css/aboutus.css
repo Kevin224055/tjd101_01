@@ -1,8 +1,12 @@
 @import url(reset.css);
 @import url(hf.css);
 
+
+
+
 main{
     padding-top: 60px;
+    
 }
 
 .companyinf{
@@ -32,7 +36,24 @@ main{
 .companyinf-ph{
     width: 500px;
     position: relative;
+    animation: move 3s ease-in-out infinite;           
+   
 }
+ /*----------------animation----------------------*/
+@keyframes move {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+
 
 .companyinf-ph img{
 width: 200px;
@@ -54,11 +75,13 @@ position: absolute;
 
 /*----------------- 門市據點------------------- */
 .store-address{
+    /* border: 1px solid red; */
     width: 900px;
     margin: 0 auto;
     background-color: #fff;
     color: #A38368;
     margin-bottom: 50px;
+    
 }
 .store-address h2{
 font-size: 24px;
@@ -96,11 +119,16 @@ border-bottom: 1px solid #A38368;
 }
 
 .map{
-    display: none;
+    
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
 .first-shop:hover .map{
-    display: block;
+   
+    max-height: 200px;
+    
 }
 
 .shopo-word{

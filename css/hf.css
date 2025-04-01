@@ -5,7 +5,8 @@ body{
     font-family: Arial;
     background-image: url(../img/bgimage.png);
     /* border: 5px solid red; */
-    background-position: center;
+    /* background-position: center; */
+    background-position: 50% 0;
     background-repeat: no-repeat;
 }
 h1{

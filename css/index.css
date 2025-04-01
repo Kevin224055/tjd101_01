@@ -88,6 +88,55 @@ color: #945f31;
     
  }
  /* ------------------------------- main------------------------------- */
+
+/* --------------------animation--------------------------------- */
+ .star{
+    text-align: center;
+ }
+
+ .sparkle {
+    position: relative;
+    display: inline-block;
+   
+   
+}
+
+.star1{
+    position: absolute;
+    left: -50px;
+    top: 15px;
+    font-size: 20px;
+    color: #C29186;
+}
+
+.star2{
+    position: absolute;
+    left: -40px;
+    color: #C29186;
+}
+
+/* 閃爍動畫 */
+@keyframes sparkle {
+    0% { opacity: 0;  }
+    50% { opacity: 1;  }
+    100% { opacity: 0; }
+}
+
+/* 應用動畫 */
+.star1 {
+    animation: sparkle 2s infinite;
+}
+
+.star2 {
+    animation: sparkle 2s infinite 0.5s; 
+}
+
+
+
+
+
+
+
  /* ---------------------------主打商品--------------------------- */
  main{
     /* position: relative; */

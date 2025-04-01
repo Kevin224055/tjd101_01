@@ -55,3 +55,15 @@ main{
     margin-bottom: 100px;
     color: #A38368;
 }
+
+
+
+/*  transition */
+
+
+.activityff{
+    transition: transform 0.3s ease;
+}
+.activityff:hover {
+    transform: scale(1.1);
+}
