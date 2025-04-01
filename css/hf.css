@@ -20,7 +20,9 @@ nav{
     /* border: 1px solid blue; */
     width: 1200px;
     background-color: #C29186;
-   
+    position: fixed;
+  
+   z-index: 100;
     }
 nav section{
     display: flex;

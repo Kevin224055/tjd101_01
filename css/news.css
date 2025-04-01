@@ -1,6 +1,11 @@
 @import url(reset.css);
 @import url(hf.css);
 
+
+main{
+  padding-top: 60px;
+}
+
 .control{
     display: flex;
     justify-content: space-between;
@@ -69,7 +74,7 @@
         /* border-radius: 5px; */
        outline: none;
         border: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #A38368;
         /* background-color: #D4BAA3; */
         background-color: transparent;
         padding-top: 10px;
@@ -87,6 +92,10 @@
       .control-btn{
     padding-top: 10px;
     
+      }
+
+      #down{
+        color:#A38368;
       }
 
 

@@ -20,9 +20,11 @@ h1{
 
  /* 回到最上方 */
  .gotop {
-    position: fixed;
-    bottom: 170px;
-    right: 100px;
+    /* position: absolute; */
+     /* position: sticky; */
+     position: fixed; 
+      bottom: 170px;
+    right: 10px;
     display: none;
     z-index: 999;
     font-size: 30px;
@@ -30,6 +32,7 @@ h1{
 .gotop {
     width: 120px;
     height: 120px;
+    /* margin-right: 350px; */
 }
 
 
@@ -87,11 +90,15 @@ color: #945f31;
  /* ------------------------------- main------------------------------- */
  /* ---------------------------主打商品--------------------------- */
  main{
+    /* position: relative; */
     width: 1200px;
     /* border: 1px solid red; */
     /* margin-bottom: 50px; */
+    
+    
  }
  main section img{
+    
     display: block;
     width: 1200px;
     margin: 0 auto;

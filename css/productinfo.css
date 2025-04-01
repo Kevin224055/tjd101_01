@@ -2,6 +2,11 @@
 @import url(hf.css);
 
 
+
+main{
+    padding-top: 60px;
+}
+
 /* ----------main商品介紹 ----------------*/
 
 .productinfo{

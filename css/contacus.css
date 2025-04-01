@@ -1,6 +1,11 @@
 @import url(reset.css);
 @import url(hf.css);
 
+
+main{
+    padding-top: 60px;
+}
+
 .ph{
     position: relative;
 }

@@ -10,7 +10,9 @@
     padding-bottom: 20px;
     margin: 0 auto;
 } */
-
+main{
+    padding-top: 60px;
+}
 
 .activityff{
     display: flex;

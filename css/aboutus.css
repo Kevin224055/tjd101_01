@@ -1,6 +1,10 @@
 @import url(reset.css);
 @import url(hf.css);
 
+main{
+    padding-top: 60px;
+}
+
 .companyinf{
     display: flex;
     width: 900px;
@@ -91,10 +95,14 @@ border-bottom: 1px solid #A38368;
     padding-top: 10px;
 }
 
-.first-shop .map{
-    display: flex;
-    
+.map{
+    display: none;
 }
+
+.first-shop:hover .map{
+    display: block;
+}
+
 .shopo-word{
     display: flex;
     /* border: 1px solid green; */
