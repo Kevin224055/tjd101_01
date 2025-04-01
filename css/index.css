@@ -23,9 +23,9 @@ h1{
  .gotop {
     /* position: absolute; */
      /* position: sticky; */
-     position: fixed; 
-      bottom: 170px;
-    right: 10px;
+    position: fixed; 
+    bottom: 170px;
+    right: 95px;
     display: none;
     z-index: 999;
     font-size: 30px;
