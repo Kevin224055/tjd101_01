@@ -103,17 +103,32 @@ color: #945f31;
 
 .star1{
     position: absolute;
-    left: -50px;
-    top: 15px;
-    font-size: 20px;
+    left: -40px;
+    top:20px;
+    font-size: 30px;
     color: #C29186;
+    transform:  perspective(500px) scale3d(1.2, 1, 1.2) rotateX(10deg) rotateY(-30deg);
 }
 
 .star2{
     position: absolute;
-    left: -40px;
+    left: -35px;
+    top: 55px;
     color: #C29186;
+    font-size: 10px;
 }
+
+.star3{
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    color: #C29186;
+    font-size: 15px;
+}
+
+
+
+
 
 /* 閃爍動畫 */
 @keyframes sparkle {
@@ -130,6 +145,11 @@ color: #945f31;
 .star2 {
     animation: sparkle 2s infinite 0.5s; 
 }
+
+.star3 {
+    animation: sparkle 2s infinite 1s; 
+}
+
 
 
 
