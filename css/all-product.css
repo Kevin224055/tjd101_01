@@ -4,7 +4,7 @@
 main .bg img{
     width: 1200px;
     display: block;
-    
+    padding-top: 12px;
 }
 main{
   padding-top: 60px;

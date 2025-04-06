@@ -44,50 +44,7 @@ h1{
 
 
 /* ------------------------------- 導覽列------------------------------- */
-nav{
-    /* border: 1px solid blue; */
-    width: 1200px;
-    background-color: #C29186;
-   position: fixed;
-  
-   z-index: 100;
-   
-    }
-nav section{
-    display: flex;
-    justify-content: space-between;
-}
-nav ul{
-width: 800px;
-display: flex;
-/* border: 1px solid red; */
-}
-nav ul li{
-    width: 100px;
-    align-content: center;
-}
-nav img{
-   width: 100px;
-    padding-left: 20px;
-    /* border: 1px solid black; */
- }
- .wrapper .fa-cart-shopping{
 
-font-size: 30px;
-color: #945f31;
- }
- .wrapper li a{
-    text-align: center;
-    width: 70px;
-    display: block;
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
- }
- .wrapper li a:hover{
-    
- }
  /* ------------------------------- main------------------------------- */
 
 /* --------------------animation--------------------------------- */
@@ -172,7 +129,7 @@ color: #945f31;
     display: block;
     width: 1200px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 70px;
  }
 
  .mainProuduct{
@@ -275,7 +232,7 @@ text-align: center;
 .Timeph li{
     /* border: 1px solid yellow; */
     display: flex;
-    width: 170px;
+    width: 300px;
    
     flex-direction: column; 
     align-items: center; 
@@ -283,7 +240,8 @@ text-align: center;
     
     padding: 0 10px;
     margin-bottom: 30px;
-    
+    margin-right: 10px;
+    margin-left: 10px;
     
 }
 .Timeph li p{
@@ -294,7 +252,7 @@ text-align: center;
     /* border: 1px solid red; */
     text-align: center;
     line-height: 20px;
-   
+   font-size: 16px;
 }
 
 .button{
@@ -330,19 +288,19 @@ text-decoration: line-through;
 
 .Timeph li:nth-child(2){
 background-color: white;
-margin-right: 30px;
-margin-left: 30px;
+/* margin-right: 30px;
+margin-left: 30px; */
 
 }
 .Timeph li:nth-child(3){
 background-color: white;
-margin-right: 30px;
-margin-left: 30px;
+/* margin-right: 30px;
+margin-left: 30px; */
 }
     .Timeph li:nth-child(4){
 background-color: white;
-margin-right: 30px;
-margin-left: 30px;
+/* margin-right: 30px;
+margin-left: 30px; */
 }
 
 
@@ -368,7 +326,7 @@ margin-left: 30px;
 }
 
  .Time img{
-    width: 150px;
+    width: 200px;
     display: block;
     /* border: 1px solid blue; */
     padding-top: 10px;
@@ -425,10 +383,11 @@ overflow: hidden;
 .target img{
     /* border: 1px solid yellow; */
 width: 250px;
-/* border-radius: 8px; */
+border-radius: 8px;
 position: absolute;
 right: 110px;
 top: 60px;
+padding-top: 0px;
 }
 
 
@@ -487,9 +446,10 @@ overflow: hidden;
     /* border: 1px solid yellow; */
 width: 250px;
 position: absolute;
-/* border-radius: 8px; */
+border-radius: 8px;
 left: 110px;
 top: 60px;
+padding-top: 0px;
 }
 
 

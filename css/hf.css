@@ -40,6 +40,7 @@ nav ul li{
     padding-left: 10px;
     /* border: 1px solid red; */
     display: flex;
+    
 }
 
 
@@ -49,7 +50,7 @@ nav ul li:nth-child(-n+8):hover{
 nav ul li a{
     display: block;
     width: 100px;  
-  height: 50px;
+  height: 72px;
   text-align: center;
   line-height: 60px;
  justify-content: center;
@@ -58,8 +59,8 @@ nav ul li a{
 
 
 nav img{
-   width: 100px;
-    padding-left: 20px;
+   width: 150px;
+    /* padding-left: 20px; */
     /* border: 1px solid black; */
  }
  .wrapper .fa-cart-shopping{
@@ -93,7 +94,7 @@ color: #945f31;
     width: 100px;
     display: none;
     position: absolute;
-    top: 62px;
+    top: 72px;
     left: 0;
     z-index: 1;
 }

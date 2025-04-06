@@ -3,7 +3,7 @@
 
 
 main{
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .ph{
@@ -56,7 +56,7 @@ main .mainp p{
 
 .name{
     /* border: 1px solid blue; */
-    /* padding-left: 40px; */
+   
     margin: 0 auto;
     padding-right: 5px;
 
@@ -69,10 +69,7 @@ main .mainp p{
     padding-top: 30px;
 }
 
-/* .formcontain form label{
-    border:1px solid black;
-    width: 900px;
-} */
+
 .downform{
   width: 700px;
   /* border:1px solid green; */
