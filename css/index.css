@@ -256,13 +256,13 @@ text-align: center;
 }
 
 .button{
-    width: 110px;
+    width: 120px;
     padding-left: 30px;
     display: flex;
 }
 .button a{
     margin-right: 10px;
-  
+  text-decoration: none;
 }
 
 .fa-heart{
