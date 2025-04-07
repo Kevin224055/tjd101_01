@@ -12,7 +12,7 @@ html, body {
     width: 100%; /*滿版寬度（viewport width）*/
     height: 100%; /* 滿版高度（viewport height） */
     overflow: hidden; /* 可選：避免畫面有捲軸 */
-    
+    margin: 0 auto;
   }
   
 
