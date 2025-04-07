@@ -220,15 +220,34 @@ article a:hover{
 
 
 /* ------------商品頁----------------- */
-.product{
-    max-width: 1700px;
-    /* border: 1px solid green; */
+
+pt{
     
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product{
+    max-width: 1700px;
+    border: 1px solid green;
+   
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     margin-top: 20px;
     margin-bottom: 20px;
+    /* justify-content: start;
+    align-items: center; */
+    gap: 40px;
+  
+   /* grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    gap: 40px;
+    justify-content: center;
 }
 
 
@@ -237,6 +256,8 @@ article a:hover{
     display: flex;
     position: relative;
     width: 300px;
+    
+    
     height: 200px;
     background-image: url('https://via.placeholder.com/300x200');
     background-size: cover;
@@ -244,7 +265,7 @@ article a:hover{
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     /* cursor: pointer; */
-    margin: 20px;
+    
     
   }
 
