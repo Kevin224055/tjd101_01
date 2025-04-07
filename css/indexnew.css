@@ -232,7 +232,7 @@ pt{
 
 .product{
     max-width: 1700px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
    
     margin: 0 auto;
     /* display: flex; */
