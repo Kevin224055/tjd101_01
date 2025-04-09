@@ -156,13 +156,17 @@ display: block;
     margin: 0 auto;
     background-color: #D4BAA3;
     margin-bottom: 50px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .conectproduct ul{
-    width: 900px;
+    width: 856px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
+    /* border: 1px solid red; */
+    margin: 10px 0px;
 }
 .conectproduct ul li{
     width: 140px;
@@ -174,16 +178,17 @@ display: block;
    padding: 10px;
    margin-bottom: 10px;
    margin-top: 10px;
-   margin-right: 4px;
+   
+   margin: 0 auto;
    
 }
-.conectproduct ul li:first-child{
+/* .conectproduct ul li:first-child{
     background-color: transparent;
 }
 
 .conectproduct ul li:last-child{
     background-color: transparent;
-}
+} */
 .conectproduct ul li p{
     padding-top: 10px;
     color:#A38368;
@@ -213,18 +218,39 @@ display: block;
 .conectproduct img{
     width: 140px;
 }
-.conectproduct .arrow{
-    width: 10px;
+
+.conectproduct .cc{
+    display: block;
+    width: 100px;
+    background-color: #C29186;
+    border-radius: 8px;
+   text-align: center;
+   color: white;
+   padding: 5px 0;
+   text-decoration: none;
+   border: none;
+   font-size: 16px;
+   cursor: pointer;
+}
+.conectproduct button{
+    border: none;
     background-color: transparent;
-    border: none; 
-  outline: none;
-  color:#A38368;
-  /* margin-right: 5px; */
+    color:#A38368;
+}
+.conectproduct button .fa-chevron-right{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.conectproduct button .fa-chevron-left{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 
 /* -----------------------按鈕動畫 -----------------------*/
-button{
+ .cart-button{
     display: block;
     width: 100px;
     background-color: #C29186;

@@ -319,13 +319,15 @@ color: #A38368;
 }
 .fa-chevron-right{
     position: absolute;
-    top: 210px;
+    /* top: 210px; */
+    top: 50%;
     right: 0;
     padding-right: 5px;
 }
 .fa-chevron-left{
     position: absolute;
-    top: 210px;
+    /* top: 210px; */
+    top: 50%;
     left: 0;
     padding-left: 5px;
 }
@@ -353,7 +355,8 @@ color: #A38368;
     text-align: center;
     padding-top: 5px;
 }
-.button a{
+.button button{
+    border: none;
     display: block;
     width: 100px;
     background-color: #C29186;
@@ -362,6 +365,7 @@ color: #A38368;
    color: white;
    padding: 5px 0;
    text-decoration: none;
+   cursor: pointer;
 }
 .buyproduct .button{
     display: flex;
@@ -380,7 +384,12 @@ color: #A38368;
     width: 140px;
     margin-top: 10px;
 }
-
+.gogo .i{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    color: #A38368;
+}
 
 
 /* .buyproduct ul{

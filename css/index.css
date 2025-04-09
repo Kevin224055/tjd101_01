@@ -124,13 +124,35 @@ h1{
     
     
  }
- main section img{
+ main .slider img{
     
     display: block;
     width: 1200px;
     margin: 0 auto;
     padding-top: 70px;
  }
+ .slider{
+    position: relative;
+ }
+ .slider  .iright{
+position: absolute;
+top: 50%;
+right: 2%;
+font-size: 26px;
+background-color: transparent;
+border: none;
+cursor: pointer;
+ }
+
+ .slider .ileft {
+    position: absolute;
+    top: 50%;
+    left:2%;
+    font-size: 26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+     }
 
  .mainProuduct{
 width: 900px;
@@ -216,8 +238,9 @@ margin-right: 20px;
 /* --------------------禮盒 ---------------*/
 .Timeph{
     display: flex;
-    
+    justify-content: space-between;
 }
+
 .Timeph button{
     background-color: transparent;
     border: none;
@@ -270,16 +293,35 @@ text-align: center;
     line-height: 20px;
    font-size: 16px;
 }
-
 .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button i{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.button button{
+    /* border: 1px solid red; */
     width: 120px;
     padding-left: 30px;
     display: flex;
+    /* margin-right: 10px; */
+    width: 100px;
+    color: #ffffff;
+    display: block;
+    background-color:#C29186;
+    border-radius: 8px;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
 }
-.button a{
+/* .button a{
     margin-right: 10px;
   text-decoration: none;
-}
+} */
 
 .fa-heart{
     padding-top: 11px;
@@ -329,7 +371,7 @@ margin-left: 30px; */
 .Timeph li section{
     color: #A38368;
 }
-.Timeph li a{
+/* .Timeph li a{
     width: 100px;
     color: #ffffff;
     display: block;
@@ -339,7 +381,7 @@ margin-left: 30px; */
     margin-top: 10px;
     margin-bottom: 10px;
     
-}
+} */
 
  .Time img{
     width: 230px;
