@@ -218,6 +218,22 @@ margin-right: 20px;
     display: flex;
     
 }
+.Timeph button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.fa-chevron-left{
+    align-items: center;
+    justify-content: space-between;
+  padding-left: 10px;
+}
+
+.fa-chevron-right{
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
 
 .Timeph ul{
     width: 900px;
@@ -225,24 +241,24 @@ margin-right: 20px;
 margin: 0 auto;
 /* border: 1px solid black; */
 text-align: center;
- 
+ margin-bottom: 30px;
   
 
 }
 .Timeph li{
     /* border: 1px solid yellow; */
     display: flex;
-    width: 300px;
+    width: 250px;
    
     flex-direction: column; 
     align-items: center; 
     /* text-align: center; */
     
     padding: 0 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px;
     margin-right: 10px;
-    margin-left: 10px;
-    
+    margin-left: 10px; */
+    margin:0 auto;
 }
 .Timeph li p{
     padding-top: 10px;
@@ -286,18 +302,18 @@ color: gray;
 text-decoration: line-through;
 }
 
-.Timeph li:nth-child(2){
+.Timeph li:nth-child(1){
 background-color: white;
 /* margin-right: 30px;
 margin-left: 30px; */
 
 }
-.Timeph li:nth-child(3){
+.Timeph li:nth-child(2){
 background-color: white;
 /* margin-right: 30px;
 margin-left: 30px; */
 }
-    .Timeph li:nth-child(4){
+    .Timeph li:nth-child(3){
 background-color: white;
 /* margin-right: 30px;
 margin-left: 30px; */
@@ -326,7 +342,7 @@ margin-left: 30px; */
 }
 
  .Time img{
-    width: 200px;
+    width: 230px;
     display: block;
     /* border: 1px solid blue; */
     padding-top: 10px;
