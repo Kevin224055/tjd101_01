@@ -1,7 +1,13 @@
 @import url(css/reset.css);
+* {
+    box-sizing: border-box;
+  }
 body{
+    
+    /* width: 1200px; */
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    width: 1200px;
     font-family: Arial;
     background-image: url(../img/bgimage.png);
     /* border: 5px solid red; */
@@ -16,14 +22,32 @@ h1{
     color: #A38368;
     margin-bottom: 20px;
  }
+
+ 
 /* ------------------------------- 導覽列------------------------------- */
+/* 漢堡圖 */
+.hamburger{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.bar{
+    width: 36px;
+    height: 6px;
+    background-color: #666;
+    margin: 6px 5px;
+    border-radius: 3px;
+    display: none;
+}
+
 nav{
-    /* border: 1px solid blue; */
-    width: 1200px;
-    background-color: #C29186;
-    position: fixed;
-  
-   z-index: 100;
+   
+    max-width: 1200px;
+    position: relative;
+    width: 100%;
+  background-color: #C29186;
+  position: fixed;
+  z-index: 100;
     }
 nav section{
     display: flex;
@@ -134,79 +158,240 @@ nav .side li a{
 
 /*--------------------- footer------------------- */
  footer{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: #C29186;
  
 }
-footer .infm{
-    display: flex;
-    /* border: 1px solid red; */
-    justify-content: space-around;
-
-}
-
-footer .infm img{
-    width: 150px;
-}
-
-
-
-footer .left{
-    width: 400px;
-    /* border:1px solid green; */
-    padding-top: 20px;
-}
-
-.infm .left p{
-    /* border: 1px solid red; */
-    padding-top: 20px;
-    font-size: 24px;
-   
-}
-.left p:first-child{
-    font-size: 24px;
-}
-
-footer .right{
-    width: 400px;
-    /* border:1px solid blue; */
+.infm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     
- 
+}
+
+.left{
+    font-size: 20px;
+    
+}
+.left p{
+    padding-top: 10px;
+}
+
+.left p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+}
+.right{
+    padding-top: 30px;
 }
 .right ul{
     display: flex;
-    justify-content:end;
-   
-}
-.right ul li{
     
-    margin-left: 50px;
-    padding-top: 40px;
-    font-size: 14px;
 }
 
 .right ul li i{
-    font-size: 32px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
-.right section p{
-    width: 400px;
-    /* border: 1px solid yellow; */
-    padding-top: 60px;
-    font-size: 24px;
+.right p{
+   margin-top: 30px;
+    font-size: 20px;
+    
 }
 
-/* footer section:last-child{
-    border: 1px solid blue;
+.bp{
     text-align: center;
-    padding-bottom: 10px;
-    /* font-size: 16px; 
+    font-size: 16px;
+}
+
+footer .infm .phlogoo img{
+    width: 150px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+/* ----------------RWD------------------ */
+
+@media screen and (max-width:820px){
+    .bar{
+        width: 36px;
+        height: 6px;
+        background-color: #666;
+        margin: 6px 5px;
+        border-radius: 3px;
+        display: block;
+    }
+   
+    
+    .hamburger{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+    }
+
+.nh{
+    
+    height: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #C29186;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+    .transition{
+        
+        flex-direction: column;
+        position: fixed;
+        background-color: #C29186;
+        right: -700px;
+        top: 60px;
+        width: 40vw;/*--------------寬度----------------*/
+        height: calc(100vh - 60px);
+        transition: right 0.3s ease-in-out;
+    }
+    .transition.open {
+        right: 0; /* 展開時滑到右邊界 */
+    }
+
+    .transition li{
+        width: 100%;
+        
+        margin-left: 0;
+        /* padding-left: 30px; */
+    }
+    
+   .wrapper .nh .transition li a{
+      width: 500px;
+        line-height: 0px;
+        display: block;
+        /* background-color: blue; */
+    }
+
+.transition li:hover{
+    background-color: #fff;
+}
+
+.transition.show {
+    right: 0;
+  }
+   
+  li:hover .side {
+    display: none; /* 確保懸停時不顯示 */
+}
+
+/* .side {
+    display: none; 
 } */
 
-footer .bp{
-    /* border: 1px solid red; */
+
+/* 子選單樣式 */
+.side {
+    display: none; /* 預設隱藏 */
+    width: 100%; /* 父層全寬 */
+    position: static; /* 遵循文件流 */
+    background-color: #D4BAA3; /* 區分子選單背景 */
+    list-style: none;
+    padding: 0;
+    margin: 0; /* 移除預設邊距 */
+}
+
+.side li {
+    width: 100%; /* 全寬 */
+    height: auto;
+    padding: 0;
+}
+
+.side li a {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: left;
+    line-height: 40px; /*增加行高，改善間距*/
+    padding: 10px 20px; /* 增加內距，文字更清晰 */
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.side li a:hover {
+    background-color: #C29186; /* 滑鼠懸停效果 */
+}
+
+.side.active {
+    display: block; /* 點擊時顯示 */
+}
+
+/* .transition li { */
+    /* width: 100%; 確保父層 li 全寬 */
+    /* margin: 0; */
+    /* padding: 0; */
+/* } */
+
+/* .transition li a { */
+    /* width: 100%; 主選單項全寬 */
+    /* padding: 15px 20px; 更好間距 */
+    /* line-height: 40px; 一致行高 */
+    /* display: block; */
+    /* color: #fff; 確保文字可讀 */
+/* } */
+
+
+
+
+/* --------------footer--------------------- */
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:440px){
+
+.infm{
+    display: flex;
+    flex-direction: column;
+
+}
+    footer .phlogo img {
+        margin-left: 0;
+    }
     
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 10px;
+    .left p:first-child{
+      font-size: 24px;
+    }
+    .right{
+        margin-left: 50px;
+        /* border: 1px solid red; */
+    }
+    .right ul{
+       
+     
+     margin-top: 15px; 
+    }
+.right i{
+    
+}
+    .right p{
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /* margin-left: 30px; */
+    }
+
 }
