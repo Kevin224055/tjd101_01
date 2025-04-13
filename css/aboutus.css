@@ -17,7 +17,9 @@ main{
 }
 
 .companyinf{
+    /* border: 1px solid red; */
     display: flex;
+    max-width: 900px;
     /* width: 900px; */
     width: 100%;
     margin: 0 auto;
@@ -42,7 +44,9 @@ main{
 }
 
 .companyinf-ph{
+    /* border: 1px solid blue; */
     width: 100%;
+    /* overflow: hidden; */
     /* width: 500px; */
     max-width: 500px;
     position: relative;
@@ -66,21 +70,24 @@ main{
 
 
 .companyinf-ph img{
-width: 200px;
+    width: 100%;
+    /* border: 1px solid red; */
+/* width: 200px; */
+max-width: 200px;
 border-radius: 50%;
 position: absolute;
 }
 .ph1{
     top: 0;
-    right: 110px;
+    right: 250px;
 }
 .ph2{
     top: 140px;
-    right: -90px;
+    right: 0px;
 }
 .ph3{
     top: 270px;
-    right: 140px;
+    right: 220px;
 }
 
 /*----------------- 門市據點------------------- */
