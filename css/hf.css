@@ -393,5 +393,7 @@ footer .infm .phlogoo img{
         margin-top: 10px;
         /* margin-left: 30px; */
     }
-
+    footer .infm .phlogoo img {
+        margin: 0;
+    }
 }
