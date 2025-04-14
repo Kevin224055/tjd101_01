@@ -115,11 +115,11 @@ color: #945f31;
 }
 
 .side{
-    width: 100px;
+    width: 100%;
     display: none;
     position: absolute;
     top: 72px;
-    left: 0;
+    right: -11px;
     z-index: 1;
 }
 
@@ -251,11 +251,13 @@ footer .infm .phlogoo img{
         flex-direction: column;
         position: fixed;
         background-color: #C29186;
-        right: -700px;
+        /* right: -700px; */
+        right:-100vw;
         top: 60px;
-        width: 40vw;/*--------------寬度----------------*/
+        width: 30vw;/*--------------寬度----------------*/
         height: calc(100vh - 60px);
         transition: right 0.3s ease-in-out;
+        box-sizing: border-box;
     }
     .transition.open {
         right: 0; /* 展開時滑到右邊界 */
@@ -293,15 +295,33 @@ footer .infm .phlogoo img{
 
 
 /* 子選單樣式 */
-.side {
-    display: none; /* 預設隱藏 */
-    width: 100%; /* 父層全寬 */
-    position: static; /* 遵循文件流 */
-    background-color: #D4BAA3; /* 區分子選單背景 */
-    list-style: none;
-    padding: 0;
-    margin: 0; /* 移除預設邊距 */
-}
+/* .side {
+    position: absolute;
+    top: 0;
+    right: 100%; 
+    width: 150px;
+    background-color: #D4BAA3;
+    display: none;
+  } */
+
+  .side {
+    position: absolute;
+  
+    top: 0;
+    right: 100%; /* ⬅️ 這讓它出現在主選單的左側 */
+    width: 150px;
+    background-color: #D4BAA3;
+    display: none;
+    height: 100%;
+  }
+ 
+  .transition > li {
+    position: relative;
+  }
+  /*.transition > li:hover .side {
+     display: block;---------------這個卡到--------------------- 
+  }
+  */
 
 .side li {
     width: 100%; /* 全寬 */
@@ -328,6 +348,8 @@ footer .infm .phlogoo img{
 
 .side.active {
     display: block; /* 點擊時顯示 */
+   
+   
 }
 
 /* .transition li { */
@@ -343,8 +365,6 @@ footer .infm .phlogoo img{
     /* display: block; */
     /* color: #fff; 確保文字可讀 */
 /* } */
-
-
 
 
 /* --------------footer--------------------- */
