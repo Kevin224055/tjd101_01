@@ -567,6 +567,7 @@ color: #A38368;
     .buyproduct .gogo ul {
          display: flex; 
         width: 100%;
+        
       flex-wrap: nowrap;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
