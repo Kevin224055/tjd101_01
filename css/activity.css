@@ -2,7 +2,21 @@
 @import url(hf.css);
 
 /* ---------------優惠活動 ----------------------*/
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    /* overflow-x: hidden;   */
+  }
 
+  .wrapper {
+    overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+  }
 /* img{
     display: block;
     padding-top: 20px;
@@ -11,12 +25,17 @@
     margin: 0 auto;
 } */
 main{
-    padding-top: 70px;
+    padding-top: 60px;
+}
+
+main section img{
+    width: 100%;
 }
 
 .activityff{
     display: flex;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     /* border: 1px solid red; */
     margin: 0 auto;
     background-color:#D4BAA3;
@@ -25,7 +44,8 @@ main{
 }
 
 .publicity{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     /* border: 1px solid gold; */
     display: flex;
     flex-direction: column;
@@ -36,13 +56,16 @@ main{
    padding-top: 20px;
 }
 .publicity h2{
+    width: 100%;
     color: #A38368;
- padding-top: 20px;  
+ padding-top: 10px;  
  font-size: 24px;
 }
 
 .activityff img{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    /* width: 300px; */
     display: block;
     padding: 20px;
     padding-left: 50px;
@@ -67,3 +90,78 @@ main{
 .activityff:hover {
     transform: scale(1.1);
 }
+
+
+
+
+
+/* -----------RWD-------------------- */
+
+@media (max-width: 820px) {
+    .publicity h2 {
+      font-size: 20px;
+    }
+    .publicity h2 {
+        padding: 10px 8px 0px 5px;
+
+    }
+
+    .activityinfo{
+        padding: 0 10px;
+    }
+    .activityff img{
+        width: 100%;
+        max-width: 300px;
+        /* width: 300px; */
+        display: block;
+        padding: 20px;
+        padding-left: 50px;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .publicity h2 {
+        font-size: 16px;
+      }
+  }
+
+
+  
+  @media (max-width: 440px) {
+    .publicity h2 {
+      font-size: 16px;
+    }
+
+
+    .activityff img{
+        width: 55%;
+        max-width: 300px;
+        /* width: 300px; */
+        display: block;
+        padding: 20px;
+        padding-left: 50px;
+    }
+
+
+    .publicity h2 {
+        padding: 10px 8px 0px 5px;
+
+    }
+
+
+    .activityinfo{
+        padding: 0 10px;
+    }
+
+  }
+  
+
+
+
+
+
+
+
+
+
+

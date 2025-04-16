@@ -1,6 +1,17 @@
 @import url(reset.css);
 @import url(hf.css);
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    /* overflow-x: hidden;   */
+  }
+
+  .wrapper {
+    overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+  }
 
 main{
     padding-top: 60px;
@@ -8,7 +19,8 @@ main{
 }
 
 .all{
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
@@ -17,14 +29,16 @@ main{
 
 .outline{
     border: 1px solid #D4BAA3;
-    width: 550px;
+    /* width: 550px; */
+    width: 100%;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
 }
 .lefttp{
-    width: 550px;
+    width: 100%;
+    /* width: 550px; */
     border: 1px solid #D4BAA3;
     overflow: hidden;
    margin-top: 20px;
@@ -34,7 +48,8 @@ main{
 }
 
 .ph{
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     float: left;
     padding-top: 15px;
     padding-left: 5px;
@@ -42,7 +57,8 @@ main{
     
 }
 .ph img{
-    width: 150px;
+    width: 100%;
+    /* width: 150px; */
 }
 .ph-r{
     width: 364px;
@@ -68,7 +84,8 @@ main{
 
 .price{
     /* border: 1px solid black; */
-    width: 100px;
+    /* width: 100px; */
+    width: 100%;
     float:left;
     /* padding-left: 20px; */
     /* padding-top: 20px; */
@@ -79,6 +96,7 @@ main{
 }
 
 .number{
+    /* width: 100%; */
     width: 150px;
     /* border: 1px solid yellow; */
     float: right;
@@ -103,7 +121,8 @@ select{
 
 .btt{
     /* border: 1px solid purple; */
-    width: 320px;
+    width: 90%;
+    /* width: 320px; */
     padding-top: 20px;
     display: flex;
     justify-content: flex-end;
@@ -112,8 +131,8 @@ select{
 }
 .btt button{
    
-    width: 50px;
-    height: 25px;
+    width: 100px;
+    height: 30px;
     text-align: center;
     border: none;
     background-color: #E7DCCE;
@@ -123,9 +142,13 @@ select{
     /* border: 1px solid orange; */
     margin-left: 20px;
     font-size: 14px;
+    cursor: pointer;
 }
 
-   
+.btt button:hover{
+    background-color: #C29186;
+    color: white;
+}
     
    
 
@@ -202,12 +225,14 @@ select{
 
 .rightdetail{
     /* border: 1px solid red; */
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     
 }
 
 .vv {
-    width: 400px;
+    width: 100%;
+    /* width: 400px; */
     display: flex;
     flex-direction: column;
     /* border: 1px solid blue; */
@@ -230,7 +255,8 @@ color: #A38368;
     
 }
 .nn{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-around;
@@ -247,7 +273,8 @@ color: #A38368;
 }
 
 .nn2{
-    width: 350px;
+    width: 100%;
+    max-width: 350px;/*-------------可能有問題-----------*/
     border-top: 1px solid #D4BAA3;
     display: flex;
     justify-content:space-around;
@@ -276,14 +303,19 @@ color: #A38368;
      height: 40px;
      text-align: center;
      font-size: 20px;
+     cursor: pointer;
  } 
 
-
+ .rightdetail button:hover{
+    background-color: #C29186;
+    color: white;
+ }
 
 
  /* -----------------加購專區 -------------------*/
 .buy{
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto;
     background-color: #D4BAA3;
    padding-top: 20px;
@@ -308,7 +340,8 @@ color: #A38368;
 
 
 .buyproduct{
-    width: 900px;
+    width: 100%;
+    /* width: 900px; */
     /* border: 1px solid red; */
     margin: 0 auto;
     background-color: #D4BAA3;
@@ -333,7 +366,8 @@ color: #A38368;
 }
 
 .buyproduct .gogo ul{
-    width: 900px;
+    width: 100%;
+    /* width: 900px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -343,7 +377,8 @@ color: #A38368;
 }
 
 .buyproduct .gogo ul li{
-    width: 160px;
+    width: 100%;
+    max-width: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,31 +399,45 @@ color: #A38368;
    text-align: center;
    color: white;
    padding: 5px 0;
+ 
    text-decoration: none;
    cursor: pointer;
 }
 .buyproduct .button{
+   
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 40px;
    padding-top: 10px;
    margin-bottom: 20px;
  }
 
  .buyproduct .button i{
+    width: 40%;
     margin-left: 10px;
     color: #A38368;
   }
   .buyproduct img{
-    width: 140px;
+    width: 100%;
+    max-width: 140px;
     margin-top: 10px;
 }
-.gogo .i{
+.gogo .itt{
+    /* border: 1px solid red; */
+    /* width: 500px; */
+   
     background-color:transparent;
     border: none;
     cursor: pointer;
     color: #A38368;
+}
+.fa-chevron-right{
+    font-size: 20px;
+}
+.fa-chevron-left{
+    font-size: 20px;
 }
 
 
@@ -414,3 +463,98 @@ color: #A38368;
 
 
  
+/*--------------RWD----------------  */
+
+
+@media (max-width: 820px) {
+    .all {
+        flex-wrap: wrap;
+    }
+
+
+    .outline {
+        margin: 0;
+    }
+    /* .outline{
+        order: 1;
+    }
+
+    .rightdetail{
+        order: 2;
+    } */
+
+    .ph img {
+        width: 160%;
+        
+    }
+
+    /* .lefttp{
+        width: 100%;
+        padding-left: 20px;
+    } */
+
+    .rightdetail {
+        /* border: 1px solid red; */
+        width: 100%;
+        max-width: 820px;
+    }
+
+
+
+
+
+    .buyproduct .gogo ul{
+        width: 100%;
+        /* width: 900px; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .buyproduct .gogo ul li{
+        width: 100%;
+        max-width: 182px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        
+    }
+
+
+
+    .buyproduct img{
+        
+        max-width: 160px;
+    }
+
+
+
+  }
+
+
+
+
+  @media (max-width: 640px) {
+
+    .ph img {
+        width: 100%;
+        
+    }
+
+    .buyproduct .gogo ul li{
+        width: 100%;
+        max-width: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        
+    }
+
+  }
