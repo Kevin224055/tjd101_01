@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
   }
+  
 body{
     
     /* width: 1200px; */
@@ -9,10 +10,13 @@ body{
     width: 100%;
     margin: 0 auto;
     font-family: Arial;
+   
     background-image: url(../img/bgimage.png);
     /* border: 5px solid red; */
     /* background-position: center; */
+   
     background-position: 50% 0;
+   
     background-repeat: no-repeat;
 }
 h1{
@@ -285,9 +289,9 @@ footer .infm .phlogoo img{
     right: 0;
   }
    
-  li:hover .side {
-    display: none; /* 確保懸停時不顯示 */
-}
+  /* li:hover .side {
+    display: none; 
+} */
 
 /* .side {
     display: none; 
@@ -311,7 +315,7 @@ footer .infm .phlogoo img{
     right: 100%; /* ⬅️ 這讓它出現在主選單的左側 */
     width: 150px;
     background-color: #D4BAA3;
-    display: none;
+    /* display: none; */
     height: 100%;
   }
  
@@ -332,7 +336,7 @@ footer .infm .phlogoo img{
 .side li a {
     width: 100%;
     height: auto;
-    display: block;
+    /* display: block; */
     text-align: left;
     line-height: 40px; /*增加行高，改善間距*/
     padding: 10px 20px; /* 增加內距，文字更清晰 */
@@ -347,8 +351,10 @@ footer .infm .phlogoo img{
 }
 
 .side.active {
-    display: block; /* 點擊時顯示 */
-   
+    /* display: block;  */
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
    
 }
 

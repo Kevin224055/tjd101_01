@@ -116,13 +116,13 @@ $(document).ready(function () {
   
         // 如果這個是打開的，就收起來
         if ($side.hasClass('active')) {
-          $side.removeClass('active').slideUp(300);
+          $side.removeClass('active');
         } else {
           // 收起其他的
-          $('.side').removeClass('active').slideUp(300);
+          $('.side').removeClass('active');
   
           // 展開這個
-          $side.addClass('active').slideDown(300);
+          $side.addClass('active');
         }
       }
     });
