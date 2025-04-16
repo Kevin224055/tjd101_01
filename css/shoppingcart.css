@@ -384,7 +384,7 @@ color: #A38368;
     justify-content: center;
     align-items: center;
     background-color: white;
-    
+     padding: 0 10px;   /*-----------這裡推開所有的圖片------*/
 }
 .buyproduct .gogo ul li p{
     text-align: center;
@@ -421,8 +421,9 @@ color: #A38368;
   }
   .buyproduct img{
     width: 100%;
-    max-width: 140px;
+    /* max-width: 140px; */
     margin-top: 10px;
+   
 }
 .gogo .itt{
     /* border: 1px solid red; */
@@ -527,10 +528,6 @@ color: #A38368;
 
 
 
-    .buyproduct img{
-        
-        max-width: 160px;
-    }
 
 
 
@@ -558,3 +555,60 @@ color: #A38368;
     }
 
   }
+
+
+
+  @media screen and (max-width: 440px) {
+    .buyproduct .gogo {
+      overflow: hidden; /* 不讓左右箭頭佔空間 */
+      
+    }
+  
+    .buyproduct .gogo ul {
+         display: flex; 
+        width: 100%;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+       scroll-behavior: smooth; 
+      -webkit-overflow-scrolling: touch; 
+      padding: 10px; 
+       gap: 10px; 
+       margin-left: 0;
+     
+    }
+
+
+
+  
+
+
+
+  
+    .buyproduct ul li {
+      flex: 0 0 55%;
+      min-width: 55%; 
+      scroll-snap-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+       padding:10px; 
+      box-sizing: border-box;
+     
+     
+    }
+  
+    .buyproduct ul li img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 8px;
+
+      
+    }
+  
+    .buyproduct .itt {
+      display: none;
+    }
+  }
+  

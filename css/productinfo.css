@@ -1,7 +1,9 @@
 @import url(reset.css);
 @import url(hf.css);
 
-
+.wrapper {
+  overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+}
 html, body {
    
     margin: 0;
@@ -112,7 +114,8 @@ top: 250px;
 
 /*----------------- 商品詳細資訊------------------------- */
 .productdetail{
-    width: 900px;
+  width: 100%;
+    max-width: 900px;
     /* border: 1px solid red; */
     margin: 0 auto;
     margin-bottom: 50px;
@@ -153,8 +156,10 @@ top: 250px;
     padding-bottom: 20px;
 }
 .productdetail img{
-   width: 900px;
-display: block;
+   /* max-width: 900px; */
+   width: 100%;
+  
+  display: block;
 }
 
 /* ---------------相關商品-------------------  */
@@ -167,7 +172,8 @@ display: block;
 }
 
 .conectproduct{
-    width: 900px;
+  width: 100%;
+    max-width: 900px;
     /* border: 1px solid red; */
     margin: 0 auto;
     background-color: #D4BAA3;
@@ -177,8 +183,8 @@ display: block;
     justify-content: space-between;
 }
 .conectproduct ul{
-    width: 856px;
-    /* width: 100%; */
+    /* width: 856px; */
+    width: 100%;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -234,13 +240,19 @@ display: block;
     color: #A38368;
   }
 .conectproduct img{
-    width: 140px;
+     /* max-width: 180px;  */
+    width: 90%; 
   
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .conectproduct .cc{
     display: block;
-    width: 100px;
+    width: 100%;
+    /* width: 100px; */
     background-color: #C29186;
     border-radius: 8px;
    text-align: center;
@@ -415,10 +427,7 @@ display: block;
     }
 
   
-    .conectproduct img {
-        width: 100%;
-      
-    }
+    
   
     footer .infm {
       flex-direction: column;
@@ -444,9 +453,22 @@ display: block;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 440px) {
 
-.conectproduct ul li {
+/* .conectproduct ul li {
       width: 40%;
       margin: 18px;
       padding-top: 10px;
@@ -460,6 +482,80 @@ display: block;
 
     .conectproduct .button{
     padding-left: 10px;
+    } */
+
+
+
+
+
+
+    .conectproduct {
+      flex-direction: column;
+      align-items: stretch;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .conectproduct ul {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scroll-behavior: smooth;
+      gap: 10px;
+      padding: 10px;
+      margin: 0;
+    }
+  
+    .conectproduct ul li {
+      flex: 0 0 50%;
+      min-width: 50%;
+      scroll-snap-align: center;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 0;
+      
+    }
+  
+    /* .conectproduct img {
+      width: 100%;
+      
+      height: auto;
+      border-radius: 8px;
+      padding: 0;
+    } */
+
+    .conectproduct img {
+      /* max-width: 180px; */
+      width: 100%;
+      
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+    
+    }
+    
+  
+    .conectproduct .button {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      padding: 0;
+    }
+  
+    .conectproduct .cc,
+    .conectproduct .button i {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* 左右箭頭按鈕可選擇要不要顯示，以下是隱藏它們（如無滑動控制功能） */
+    .conectproduct > button {
+      display: none;
     }
 
   }
