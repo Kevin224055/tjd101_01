@@ -393,7 +393,7 @@ color: #A38368;
 .button button{
     border: none;
     display: block;
-    width: 100px;
+    width: 110px;
     background-color: #C29186;
     border-radius: 8px;
    text-align: center;
@@ -468,6 +468,7 @@ background-color: #A38368;
 
    .buyproduct .button .fa-heart{
     cursor: pointer;
+    font-size: 20px;
    }
    .buyproduct .button .fa-heart.red {
     color: red;

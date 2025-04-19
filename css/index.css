@@ -391,6 +391,7 @@ text-align: center;
     padding-top: 11px;
     padding-right: 10px;
     cursor: pointer;
+    font-size: 20px;
 }
 .price {
     width: 100px;
