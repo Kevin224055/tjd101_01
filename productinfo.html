@@ -8,6 +8,8 @@
     <link rel="icon" href="img/test2.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/productinfo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/productinfo.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -100,21 +102,40 @@
                         </select>
                     </form>
                     <button class="cart-button">加入購物車</button>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
                 </section>
             </section>
         </section>
    <!----------------------- 商品詳細資訊-------------------- -->
 <section class="productdetail">
         <section class="line">
-            <button><p>商品介紹</p></button>
-            <button><p>規格說明</p></button>
-            <button><p>配送方式</p></button>
+            <button id="b1"><p>商品介紹</p></button>
+            <button id="b2"><p>規格說明</p></button>
+            <button id="b3"><p>配送方式</p></button>
             
         </section>
-    <h2 class="hh">橄欖酸種麵包</h2>
-    <p class="pp">橄欖酸種麵包（Olive Sourdough Bread）是將黑橄欖或綠橄欖加入酸種麵糰，經過長時間天然發酵，擁有濃郁風味與嚼勁。</p>
-    <img src="img/product4.png" alt="">
+        <div class="ii1">
+            <h2 class="hh">橄欖酸種麵包</h2>
+            <p class="pp">橄欖酸種麵包（Olive Sourdough Bread）是將黑橄欖或綠橄欖加入酸種麵糰，經過長時間天然發酵，擁有濃郁風味與嚼勁。</p>
+            <img src="img/product4.png" alt="">
+        </div>
+        <div class="ii2">
+            <p class="pp">商品屬性:  全素</p>
+            <p class="pp">四大標示  X  蛋 X  乳製品 X  糖 X  堅果</p>
+            <p class="pp">保存方法:
+                冷凍請勿超過4個月
+                因台灣氣候較為潮濕，食用前若能以烤箱回烤會更加美味。
+                本店採用低溫長時間發酵方法製作含有大量乳酸菌、酢酸等腸內益菌的食品，比一般麵包老化慢，同樣條件下保存時間亦比較長久。
+                請注意！ 請勿放至冷藏，因容易導致麵包中的水分流失、澱粉老化，影響口感。</p>
+            
+           
+        </div>
+        <div class="ii3">
+            <p class="pp">配送方式與相關問題</p>
+            <p class="pp">宅急便冷凍專車配送,出貨後約1~3個工作天配達(遇到國定假日配送時間由宅急便貨運為主)</p>
+            <p class="pp">製作好麵包及甜點後，我們會依照商品屬性進行常溫/冷藏/冷凍的配送。讓商品以最好的方式呈現給正在等待的你/妳。
+                備註：收到商品後，務必依照商品上所寫的保存方式保存喔！如遇貨運量大，宅急便可能會有延遲的現象，實際配送過程及時間由宅急便規劃安排，恕無法保證到貨時間及時段。</p>
+        </div>
 </section>
 <!-------------------------- 相關商品 ------------------------->
 <section class="cp">
@@ -122,7 +143,7 @@
 </section>
 
 <section class="conectproduct">
-    <button><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="cl"><i class="fa-solid fa-chevron-left"></i></button>
     <ul>
        
         <li>
@@ -135,7 +156,7 @@
              </section>
              <section class="button">
                 <button class="cc">加入購物車</button>
-                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
              </section>
          </li>
          <li>
@@ -148,7 +169,7 @@
              </section>
              <section class="button">
                  <button class="cc">加入購物車</button>
-                 <i class="fa-regular fa-heart"></i>
+                 <i class="fa-solid fa-heart"></i>
              </section>
          </li>
          <li>
@@ -161,7 +182,7 @@
              </section>
              <section class="button">
                 <button class="cc">加入購物車</button>
-                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
              </section>
          </li>
          <li>
@@ -174,7 +195,7 @@
              </section>
              <section class="button">
                 <button class="cc">加入購物車</button>
-                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
              </section>
          </li>
          <li>
@@ -187,12 +208,37 @@
              </section>
              <section class="button">
                 <button class="cc">加入購物車</button>
-                 <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
              </section>
          </li>
-         
+         <li>
+            <a href=""><img src="img/conectproduct4.png" alt=""></a>
+             
+             <p>查拉麵包</p>
+             <section class="price">
+                 <p>NT$100</p>
+                
+             </section>
+             <section class="button">
+                <button class="cc">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
+             </section>
+         </li>
+         <li>
+            <a href=""><img src="img/conectproduct5.png" alt=""></a>
+             
+             <p>種子雜糧麵包</p>
+             <section class="price">
+                 <p>NT$100</p>
+                
+             </section>
+             <section class="button">
+                <button class="cc">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
+             </section>
+         </li>
     </ul>
-    <button><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="cr"><i class="fa-solid fa-chevron-right"></i></button>
 </section>
 
 

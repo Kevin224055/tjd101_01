@@ -15,7 +15,7 @@
   }
 
   .wrapper {
-    overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+    /* overflow-x: hidden;-------------------這裡卡住----------------- */
   }
 /* img{
     display: block;

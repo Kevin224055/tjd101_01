@@ -8,6 +8,12 @@
     <link rel="icon" href="img/test2.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/all-product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.js"></script>
+ 
+    <script src="js/all-product.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -156,7 +162,7 @@
     <section class="productlist">
         <ul>
         
-        <li>
+        <li data-item="種子雜糧麵包">
            <a href="productinfo.html"><img src="img/productlist1.png" alt=""></a>
            <i class="fa-solid fa-star" ></i>
             <p>種子雜糧麵包</p>
@@ -165,15 +171,15 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
 
 
 
         
-        <li>
+        <li data-item="黑麥麵包">
             <a href="productinfo.html"><img src="img/productlist2.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>黑麥麵包</p>
@@ -182,11 +188,11 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
-        <li>
+        <li data-item="法式小麵包">
             <a href="productinfo.html"><img src="img/productlist3.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>法式小麵包</p>
@@ -195,11 +201,11 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
-        <li>
+        <li data-item="橄欖酸種麵包">
             <a href="productinfo.html"><img src="img/productlist4.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>橄欖酸種麵包</p>
@@ -208,11 +214,11 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
-        <li>
+        <li data-item="歐式鄉村麵包">
             <a href=""><img src="img/productlist5.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>歐式鄉村麵包</p>
@@ -221,12 +227,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="查拉麵包">
             <a href=""><img src="img/productlist6.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>查拉麵包</p>
@@ -235,12 +241,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="堅果雜糧酸種麵包">
             <a href=""><img src="img/productlist7.png" alt=""></a>
             <i class="fa-solid fa-star" ></i>
             <p>堅果雜糧酸種麵包</p>
@@ -249,12 +255,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="歐式鄉村果乾麵包">
             <a href=""><img src="img/productlist8.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>歐式鄉村果乾麵包</p>
@@ -263,12 +269,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="布里歐麵包">
             <a href=""><img src="img/productlist9.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>布里歐麵包</p>
@@ -277,12 +283,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="全麥酸種麵包">
             <a href=""><img src="img/productlist10.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>全麥酸種麵包</p>
@@ -291,12 +297,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="法國長棍麵包">
             <a href=""><img src="img/productlist11.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>法國長棍麵包</p>
@@ -305,12 +311,12 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         
-        <li>
+        <li data-item="德式凱瑟卷">
             <a href=""><img src="img/productlist12.png" alt=""></a>
             <i class="fa-solid fa-star"></i>
             <p>德式凱瑟卷</p>
@@ -319,8 +325,8 @@
                
             </section>
             <section class="button">
-                <a href="#">加入購物車</a>
-                <i class="fa-regular fa-heart"></i>
+                <button class="ccr">加入購物車</button>
+                <i class="fa-solid fa-heart"></i>
             </section>
         </li>
         

@@ -10,7 +10,7 @@ html, body {
   }
 
   .wrapper {
-    overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+    /* overflow-x: hidden;-------------------這裡卡住----------------- */
   }
 
 main{
@@ -378,7 +378,7 @@ color: #A38368;
 
 .buyproduct .gogo ul li{
     width: 100%;
-    max-width: 160px;
+    max-width: 203px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,7 +461,10 @@ color: #A38368;
    margin-top: 10px;
    margin-right: 4px;
    /* flex-wrap: wrap; */
-
+   .buyproduct .button .fa-heart.red {
+    color: red;
+  }
+  
 
  
 /*--------------RWD----------------  */

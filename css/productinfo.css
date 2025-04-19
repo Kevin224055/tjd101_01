@@ -2,7 +2,7 @@
 @import url(hf.css);
 
 .wrapper {
-  overflow-x: hidden;/*-------------------這裡卡住-----------------*/
+  /* overflow-x: hidden;-------------------這裡卡住----------------- */
 }
 html, body {
    
@@ -161,6 +161,24 @@ top: 250px;
   
   display: block;
 }
+.ii1{
+  display: block;
+}
+.ii2,.ii3{
+  display: none;
+}
+
+
+.red{
+  color:red;
+}
+
+section.button .fa-heart.red {
+  color: red;
+}
+
+
+
 
 /* ---------------相關商品-------------------  */
 .cp{

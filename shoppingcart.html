@@ -8,6 +8,8 @@
     <link rel="icon" href="img/test2.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/shoppingcart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/shoppingcart.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -73,7 +75,11 @@
     <main>
         <section class="all">
             <section class="outline">
-                <section class="lefttp">
+                
+                <div id="product-area"></div>
+                <!-- <section class="lefttp">
+                    
+                    
 
                     <section class="ph">
                         <img src="img/conect product1.png" alt="">
@@ -145,7 +151,7 @@
                             </section>
                     </section>
                         
-                </section>
+                </section> -->
                 
             </section>
 <!--------------------- 右側結帳資訊 ------------------------>
@@ -193,7 +199,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
 
@@ -207,7 +213,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
 
@@ -221,7 +227,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
                         
@@ -235,7 +241,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
                          <li>
@@ -248,7 +254,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
 
@@ -262,7 +268,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
 
@@ -276,7 +282,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
                          <li>
@@ -289,7 +295,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
                          <li>
@@ -302,7 +308,7 @@
                              </section>
                              <section class="button">
                                 <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
                          <li>
@@ -315,10 +321,114 @@
                              </section>
                              <section class="button">
                                  <button>加入購物車</button>
-                                 <i class="fa-regular fa-heart"></i>
+                                 <i class="fa-solid fa-heart"></i>
                              </section>
                          </li>
-                        
+                    <!--  -->
+                    <li>
+                        <a href=""><img src="img/shoppingcart9.png" alt=""></a>
+                         
+                         <p>核桃咖啡蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart10.png" alt=""></a>
+                         
+                         <p>克力慕斯乳酪蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart11.png" alt=""></a>
+                         
+                         <p>巧克力草莓蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart12.png" alt=""></a>
+                         
+                         <p>莓果重乳酪蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                             <button>加入購物車</button>
+                             <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart9.png" alt=""></a>
+                         
+                         <p>核桃咖啡蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart10.png" alt=""></a>
+                         
+                         <p>克力慕斯乳酪蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart11.png" alt=""></a>
+                         
+                         <p>巧克力草莓蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                            <button>加入購物車</button>
+                            <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
+                     <li>
+                        <a href=""><img src="img/shoppingcart12.png" alt=""></a>
+                         
+                         <p>莓果重乳酪蛋糕</p>
+                         <section class="price">
+                             <p>NT$100</p>
+                            
+                         </section>
+                         <section class="button">
+                             <button>加入購物車</button>
+                             <i class="fa-solid fa-heart"></i>
+                         </section>
+                     </li>
                        
                        
                        

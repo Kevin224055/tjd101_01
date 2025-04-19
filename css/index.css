@@ -162,20 +162,22 @@ position: absolute;
 top: calc(50% + 30px);
 
 right: 2%;
-font-size: 16px;
+font-size: 20px;
 background-color: transparent;
 border: none;
 cursor: pointer;
+color: white;
  }
 
  .slider .ileft {
     position: absolute;
     top: calc(50% + 30px);
     left:2%;
-    font-size: 16px;
+    font-size: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: white;
    
      }
       
@@ -233,6 +235,15 @@ margin-bottom: 40px;
  border-radius: 50%;
  }
 
+
+/* slider */
+ /* #content{       
+  position: relative;
+}
+#content li{    
+  float: left;
+} */
+
  /* -------------------------------限時搶購 mainTime------------------------------- */
 .Time{
     width: 900px;
@@ -266,7 +277,7 @@ margin-right: 20px;
 /* border: 1px solid red; */
 }
 .strin{
-     width: 160px;
+     width: 200px;
      height: 30px;
     background-color: #C29186;
     border-radius: 8px; 
@@ -410,6 +421,12 @@ background-color: white;
 /* margin-right: 30px;
 margin-left: 30px; */
 }
+.Timeph li:nth-child(4){
+  background-color: white;
+  /* margin-right: 30px;
+  margin-left: 30px; */
+  }
+
 
 
 .fa-chevron-left{
@@ -439,6 +456,11 @@ margin-left: 30px; */
     /* border: 1px solid blue; */
     padding-top: 10px;
 
+}
+
+
+.red{
+  color:red;
 }
 /* -------------------------------熱銷商品 maintarget------------------------------- */
 
@@ -755,7 +777,7 @@ font-size: 14px;
  
 /* -----------限時搶購 -----------------*/
 
-.Timeph {
+/* .Timeph {
    display: flex;
 }
 
@@ -766,12 +788,41 @@ font-size: 14px;
 }
 
 .Timeph li{
-    /* width: 240px; */
-    /* width: 100%; */
+   
    
 gap: 10px;
 margin-left: 5px;
     margin-top: 5px;
+} */
+
+
+.Timeph {
+  overflow-x: auto;
+  position: relative;
+}
+
+.Timeph ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: max-content;
+  padding: 0 10px;
+  gap: 10px;
+ 
+}
+
+.Timeph li {
+  flex: 0 0 150px;
+  scroll-snap-align: start;
+  background-color: white;
+  
+}
+
+.Timeph .dl,
+.Timeph .dr {
+  display: none !important;
 }
 
 .Timeph li img{
@@ -893,6 +944,12 @@ margin-left: 5px;
         width: 100%;
         margin-bottom: 10px;
       }
+
+
+
+      
+      
+
       .Timeph li p {
         width: 100%;
         font-size: 20px;
@@ -1009,7 +1066,19 @@ margin-left: 5px;
        
        
       } 
-
+      .slider  .iright{
+       
+        font-size: 16px;
+        
+        
+         }
+        
+         .slider .ileft {
+           
+            font-size: 16px;
+           
+           
+             }
       
 
 
