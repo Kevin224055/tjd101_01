@@ -403,6 +403,10 @@ color: #A38368;
    text-decoration: none;
    cursor: pointer;
 }
+
+.button button:hover{
+background-color: #A38368;
+}
 .buyproduct .button{
    
    
@@ -461,11 +465,15 @@ color: #A38368;
    margin-top: 10px;
    margin-right: 4px;
    /* flex-wrap: wrap; */
+
+   .buyproduct .button .fa-heart{
+    cursor: pointer;
+   }
    .buyproduct .button .fa-heart.red {
     color: red;
+   
   }
   
-
  
 /*--------------RWD----------------  */
 

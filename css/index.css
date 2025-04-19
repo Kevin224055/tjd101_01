@@ -45,13 +45,14 @@ h1{
     /* bottom: 170px;
     right: 95px; */
     
-    bottom: 0;
+    bottom: 170px; 
     right: 0;
     display: none;
     z-index: 999;
     font-size: 30px;
 }
 .gotop {
+  
     width: 100px;
     height: 100px;
     /* margin-right: 350px; */
@@ -377,6 +378,10 @@ text-align: center;
     margin-bottom: 10px;
     margin-left: 50px;
 }
+
+.button button:hover{
+  background-color: #A38368;
+}
 /* .button a{
     margin-right: 10px;
   text-decoration: none;
@@ -385,6 +390,7 @@ text-align: center;
 .fa-heart{
     padding-top: 11px;
     padding-right: 10px;
+    cursor: pointer;
 }
 .price {
     width: 100px;

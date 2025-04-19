@@ -210,7 +210,8 @@ section.button .fa-heart.red {
     margin: 10px 0px;
 }
 .conectproduct ul li{
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -235,7 +236,7 @@ section.button .fa-heart.red {
     padding-top: 10px;
     color:#A38368;
 }
-.button a{
+/* .button a{
     display: block;
     width: 100px;
     background-color: #C29186;
@@ -244,8 +245,9 @@ section.button .fa-heart.red {
    color: white;
    padding: 5px 0;
    text-decoration: none;
-}
+} */
 .conectproduct .button{
+  width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -254,7 +256,7 @@ section.button .fa-heart.red {
  }
 
  .conectproduct .button i{
-    margin-left: 10px;
+    margin-left: 5px;
     color: #A38368;
   }
 .conectproduct img{
@@ -269,7 +271,8 @@ section.button .fa-heart.red {
 
 .conectproduct .cc{
     display: block;
-    width: 100%;
+   
+    width: 70%;
     /* width: 100px; */
     background-color: #C29186;
     border-radius: 8px;
@@ -281,6 +284,10 @@ section.button .fa-heart.red {
    font-size: 16px;
    cursor: pointer;
 }
+.conectproduct .cc:hover{
+  background-color: #A38368;
+}
+
 .conectproduct button{
     border: none;
     background-color: transparent;
@@ -434,8 +441,8 @@ section.button .fa-heart.red {
     }
   
     .conectproduct ul li {
-      width: 28%;
-      margin: 18px;
+      width: 19%;
+      /* margin: 18px; */
       padding-top: 20px;
     }
 

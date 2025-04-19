@@ -9,16 +9,12 @@ $(function () {
 $(document).ready(function () {
     
   
-    // $('.fa-heart').on('click', function () {
-    //   $(this).toggleClass('red');
-    // });
-
     $(document).on('click', '.fa-heart', function () {
         $(this).toggleClass('red');
       });
 
       
-  
+  // 導覽列
       $('.transition > li > a').on('click', function (e) {
         var $side = $(this).siblings('.side');
     
@@ -39,6 +35,8 @@ $(document).ready(function () {
         }
       });
     });
+
+
 
 
     window.addEventListener('load', function () {
