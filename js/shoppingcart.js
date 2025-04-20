@@ -1,18 +1,32 @@
+// $(function () {
+//     $('.hamburger').click(function () {
+//       $('.transition').toggleClass('show');
+//     });
+//   });
+
+
+
+
+//   $(function(){
+//     $('.hamburger').click(function(){
+//               // $(this).addClass('active')
+//               $(this).toggleClass('active')
+//           })
+//   })
+
+
 $(function () {
-    $('.hamburger').click(function () {
-      $('.transition').toggleClass('show');
-    });
+  $('.hamburger').click(function () {
+    $('.transition').toggleClass('show');
+    $(this).toggleClass('active')
+    $('.overlay').fadeToggle();
   });
+});
 
-
-
-
-  $(function(){
-    $('.hamburger').click(function(){
-              // $(this).addClass('active')
-              $(this).toggleClass('active')
-          })
-  })
+$('.overlay').on('click', function(){
+  $('.transition').removeClass('show');
+  $(this).fadeOut();
+});
 
 
 $(document).ready(function () {

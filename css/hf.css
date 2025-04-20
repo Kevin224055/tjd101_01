@@ -50,6 +50,31 @@ h1{
         .hamburger.active .bar3{transform: rotate(45deg) translate(-9px, -8px);}
 
 
+
+        .transition {
+            /* position: fixed; */
+            /* top: 100px;
+            right: 0; */
+            /* width: 100%; */
+            z-index: 1000; /* 高於 .overlay */
+            
+          }
+          
+          .overlay {
+            position: fixed;
+            top: 60px;   /* 遮罩從選單下方開始（依你的選單高度調整） */
+            left: 0;
+            width: 70%;
+            height: 100vh; /* 遮住下面整個畫面，但保留上方選單 */
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 9;
+            display: none;
+          }
+          
+      
+      
+          
+
 nav{
    
     max-width: 1200px;
@@ -104,7 +129,7 @@ color: #945f31;
  }
  .wrapper nav li a{
     text-align: center;
-    width: 70px;
+    width: 75px;
     display: block;
     color: black;
     text-decoration: none;
@@ -124,19 +149,30 @@ color: #945f31;
     width: 100px;
 }
 
-.side{
+ .side{
     width: 100%;
+    height: 100%;
     display: none;
     position: absolute;
     top: 72px;
-    right: -11px;
-    z-index: 1;
-}
+    right: 0px;
+    z-index: 1100;
+} 
+
+
+
+/* 遮罩 */
+
+  
+  .transition > li:hover .side {
+    display: block;
+  }
+  
 
 li:hover .side{
     display: block;
-    width: 100px;
-  
+    /* width: 80px; */
+  width: 100%;
 }
 
 .side li {
@@ -313,21 +349,23 @@ footer .infm .phlogoo img{
     background-color: #D4BAA3;
     display: none;
   } */
-
+  .transition > li {
+    position: relative;
+  }
+  
   .side {
     position: absolute;
   
     top: 0;
     right: 100%; /* ⬅️ 這讓它出現在主選單的左側 */
-    width: 150px;
+    width: 100%;
     background-color: #D4BAA3;
     /* display: none; */
     height: 100%;
+    
   }
  
-  .transition > li {
-    position: relative;
-  }
+  
   /*.transition > li:hover .side {
      display: block;---------------這個卡到--------------------- 
   }
@@ -378,6 +416,8 @@ footer .infm .phlogoo img{
     /* color: #fff; 確保文字可讀 */
 /* } */
 
+  
+  
 
 /* --------------footer--------------------- */
 

@@ -15,12 +15,7 @@
 //     });
 // });
 
-$(function(){
-  $('.hamburger').click(function(){
-            // $(this).addClass('active')
-            $(this).toggleClass('active')
-        })
-})
+
 
 
 
@@ -70,10 +65,22 @@ $('html ,body').animate({
 $(function () {
     $('.hamburger').click(function () {
       $('.transition').toggleClass('show');
+      $(this).toggleClass('active')
+      $('.overlay').fadeToggle();
     });
   });
 
+  $('.overlay').on('click', function(){
+    $('.transition').removeClass('show');
+    $(this).fadeOut();
+  });
 
+  // $(function(){
+  //   $('.hamburger').click(function(){
+  //             // $(this).addClass('active')
+              
+  //         })
+  // })
 
 
 

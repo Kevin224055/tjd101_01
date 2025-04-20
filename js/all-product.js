@@ -18,20 +18,34 @@ $(function(){
 
 
 
-$(function(){
-  $('.hamburger').click(function(){
-            // $(this).addClass('active')
-            $(this).toggleClass('active')
-        })
-})
+// $(function(){
+//   $('.hamburger').click(function(){
+//             // $(this).addClass('active')
+//             $(this).toggleClass('active')
+//         })
+// })
+
+
+$(function () {
+  $('.hamburger').click(function () {
+    $('.transition').toggleClass('show');
+    $(this).toggleClass('active')
+    $('.overlay').fadeToggle();
+  });
+});
+
+$('.overlay').on('click', function(){
+  $('.transition').removeClass('show');
+  $(this).fadeOut();
+});
 
 // 導覽列
 
-$(function () {
-    $('.hamburger').click(function () {
-      $('.transition').toggleClass('show');
-    });
-  });
+// $(function () {
+//     $('.hamburger').click(function () {
+//       $('.transition').toggleClass('show');
+//     });
+//   });
 
 
 
@@ -99,7 +113,7 @@ $(document).ready(function () {
     
         // 存回 localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
-    
+        alert(`✅ 已加入 ${product.name} 到購物車`);
         // console.log('已加入購物車:', product);
       });
       });
