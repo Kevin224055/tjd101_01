@@ -572,7 +572,7 @@ background-color: #A38368;
 
   @media screen and (max-width: 440px) {
     .buyproduct .gogo {
-      overflow: hidden; /* 不讓左右箭頭佔空間 */
+      overflow: hidden; 
       
     }
   

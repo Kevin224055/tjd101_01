@@ -1,19 +1,4 @@
-// $(function () {
-//     $('.hamburger').click(function () {
-//       $('.transition').toggleClass('show');
-//     });
-//   });
-
-
-
-
-//   $(function(){
-//     $('.hamburger').click(function(){
-//               // $(this).addClass('active')
-//               $(this).toggleClass('active')
-//           })
-//   })
-
+//漢堡
 
 $(function () {
   $('.hamburger').click(function () {
@@ -28,16 +13,9 @@ $('.overlay').on('click', function(){
   $(this).fadeOut();
 });
 
-
+//點愛心
 $(document).ready(function () {
     
-  
-    // $('.fa-heart').on('click', function () {
-    //   $(this).toggleClass('red');
-    // });
-
-    
-
     $(document).on('click', '.fa-heart', function () {
         $(this).toggleClass('red');
       });
@@ -45,34 +23,37 @@ $(document).ready(function () {
 
 
 
-  
+  //導覽
       $('.transition > li > a').on('click', function (e) {
         var $side = $(this).siblings('.side');
     
-        // 確認是否為小於 820px 的畫面且有子選單
+        
         if ($side.length > 0 && window.matchMedia("(max-width: 820px)").matches) {
-          e.preventDefault(); // 阻止跳轉
+          e.preventDefault(); 
     
-          // 如果這個是打開的，就收起來
+          
           if ($side.hasClass('active')) {
             $side.removeClass('active');
           } else {
-            // 收起其他的
+            
             $('.side').removeClass('active');
     
-            // 展開這個
+            
             $side.addClass('active');
           }
         }
       });
     });
 
+
+
+
     window.addEventListener('load', function () {
       const items = document.querySelectorAll('.buyproduct .gogo ul li');
       const leftBtn = document.querySelectorAll('.buyproduct .itt')[0];
       const rightBtn = document.querySelectorAll('.buyproduct .itt')[1];
   
-      const itemsPerGroup = 8; // 一次顯示 10 個（兩列，每列 5 個）
+      const itemsPerGroup = 8; 
       const totalItems = items.length;
       const maxIndex = Math.ceil(totalItems / itemsPerGroup) - 1;
       let currentIndex = 0;
@@ -104,7 +85,7 @@ $(document).ready(function () {
         }
       });
   
-      updateDisplay(); // 初始化顯示
+      updateDisplay(); 
     });
 
 
@@ -147,14 +128,14 @@ $(document).ready(function () {
     
         $phR.append($h3, $price, $number, $btt);
     
-        // ⬇️ 組裝進 lefttp
+        //進lefttp
         $lefttp.append($ph, $phR);
     
-        // 加入主容器
+        //加入容器
         $container.append($lefttp);
       });
     
-      // ✅ 綁定刪除事件
+      //刪除事件
       $('#product-area').on('click', 'button:contains("刪除")', function () {
         const index = $(this).attr('data-index');
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -162,7 +143,7 @@ $(document).ready(function () {
         cart.splice(index, 1);
         localStorage.setItem('cart', JSON.stringify(cart));
     
-        // 移除外層 .lefttp
+        
         $(this).closest('.lefttp').remove();
       });
     });

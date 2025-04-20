@@ -1,5 +1,5 @@
 $(function(){
-    // $('#productName').input()  // jQuery 沒有 input 事件，所以不能這樣寫
+    
     $('#search').on('input', function(){
         let productName = $('#search').val()
         console.log(123);

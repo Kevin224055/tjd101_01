@@ -1,17 +1,4 @@
-// $(function () {
-//     $('.hamburger').click(function () {
-//       $('.transition').toggleClass('show');
-//     });
-//   });
-
-
-
-//   $(function(){
-//     $('.hamburger').click(function(){
-//               // $(this).addClass('active')
-//               $(this).toggleClass('active')
-//           })
-//   })
+//漢堡
 $(function () {
   $('.hamburger').click(function () {
     $('.transition').toggleClass('show');
@@ -25,7 +12,7 @@ $('.overlay').on('click', function(){
   $(this).fadeOut();
 });
 
-
+//點愛心
 
 $(document).ready(function () {
     
@@ -39,18 +26,18 @@ $(document).ready(function () {
       $('.transition > li > a').on('click', function (e) {
         var $side = $(this).siblings('.side');
     
-        // 確認是否為小於 820px 的畫面且有子選單
+       
         if ($side.length > 0 && window.matchMedia("(max-width: 820px)").matches) {
-          e.preventDefault(); // 阻止跳轉
+          e.preventDefault(); 
     
-          // 如果這個是打開的，就收起來
+          
           if ($side.hasClass('active')) {
             $side.removeClass('active');
           } else {
-            // 收起其他的
+            
             $('.side').removeClass('active');
     
-            // 展開這個
+            
             $side.addClass('active');
           }
         }
@@ -67,14 +54,14 @@ $(document).ready(function () {
       const leftBtn = document.querySelector('.cl');
       const rightBtn = document.querySelector('.cr');
     
-      let currentIndex = 0; // 預設從第 0 個開始
+      let currentIndex = 0; 
     
       function updateDisplay() {
         items.forEach((item, index) => {
           if (index >= currentIndex && index < currentIndex + 5) {
-            item.style.display = 'flex'; // 顯示的三個
+            item.style.display = 'flex'; 
           } else {
-            item.style.display = 'none'; // 其他隱藏
+            item.style.display = 'none'; 
           }
         });
       }
@@ -93,7 +80,7 @@ $(document).ready(function () {
         }
       });
     
-      // 初始顯示
+      
       updateDisplay();
     
     

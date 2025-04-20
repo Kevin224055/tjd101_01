@@ -1,25 +1,5 @@
-// $(document).ready(function() {
-//     $(window).scroll(function() {
-//         if ($(this).scrollTop() > 200) {
-//             $('.gotop').fadeIn();
-//         } else {
-//             $('.gotop').fadeOut();
-//         }
-//     });
 
-//     $('.gotop').click(function(e) {
-//         e.preventDefault();
-//         $('html, body').animate({
-//             scrollTop: 0
-//         }, 500);
-//     });
-// });
-
-
-
-
-
-
+//回到最上層
 $(document).ready(function(){
     $(window).scroll(function(){
         if($(this).scrollTop() >200){
@@ -42,25 +22,7 @@ $('html ,body').animate({
 
 
 
-
-//   $(function () {
-//     $('.hamburger').click(function () {
-//       $('nav ul').toggleClass('show');
-//     });
-//   });
-
-
-
-
-
-// $(function(){
-//     $('.hamburger').click(function(){
-//         // $(this).addClass('active')
-//         $(this).toggleClass('active')
-//     })
-// })
-
-
+//漢堡
 
 $(function () {
     $('.hamburger').click(function () {
@@ -75,50 +37,8 @@ $(function () {
     $(this).fadeOut();
   });
 
-  // $(function(){
-  //   $('.hamburger').click(function(){
-  //             // $(this).addClass('active')
-              
-  //         })
-  // })
-
-
-
-//   $(document).ready(function() {
-//     $('.transition > li > a').on('click', function(e) {
-//         // 僅當此主選單項目有 .side 子選單時，才阻止跳轉
-//         var $side = $(this).siblings('.side');
-        
-//         if ($side.length > 0 && window.matchMedia("(max-width: 820px)").matches) {
-//             e.preventDefault(); // 阻止跳轉（只有主選單且有子選單才阻止）
-            
-//             // 收起其他子選單
-//             $('.side').not($side).removeClass('active').slideUp(300);
-            
-//             // 切換當前子選單
-//             $side.toggleClass('active').slideToggle(300);
-//         }
-//     });
-// });
-
-
-
-// $(document).ready(function() {
-//     $('.transition > li > a').on('click', function(e) {
-//       var $side = $(this).siblings('.side');
   
-//       // 只有在手機尺寸 (<=820px) 且有子選單時才阻止跳轉
-//       if ($side.length > 0 && window.matchMedia("(max-width: 820px)").matches) {
-//         e.preventDefault(); // 阻止 a 跳轉
-  
-//         // 收起其他子選單
-//         $('.side').not($side).removeClass('active').slideUp(300);
-  
-//         // 切換目前子選單的展開狀態
-//         $side.toggleClass('active').slideToggle(300);
-//       }
-//     });
-//   });
+//導覽
   
 
 $(document).ready(function () {
@@ -131,18 +51,18 @@ $(document).ready(function () {
     $('.transition > li > a').on('click', function (e) {
       var $side = $(this).siblings('.side');
   
-      // 確認是否為小於 820px 的畫面且有子選單
+      
       if ($side.length > 0 && window.matchMedia("(max-width: 820px)").matches) {
-        e.preventDefault(); // 阻止跳轉
+        e.preventDefault(); 
   
-        // 如果這個是打開的，就收起來
+        
         if ($side.hasClass('active')) {
           $side.removeClass('active');
         } else {
-          // 收起其他的
+          
           $('.side').removeClass('active');
   
-          // 展開這個
+          
           $side.addClass('active');
         }
       }
@@ -177,13 +97,7 @@ function countdownTo(targetDate){
 }
 
 
-// 愛心變色
 
-// $(function () {
-//   document.getElementsByClassName('fa-heart').addEventListener('click', function () {
-//     this.classList.toggle('red');
-//   });
-//      });
 
 
 
@@ -212,16 +126,16 @@ window.addEventListener('load', function () {
     showSlide(currentIndex);
   }
 
-  // 設定 2 秒自動切換
+ 
   function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 2000); // 每兩秒切換
+    autoplayInterval = setInterval(nextSlide, 2000); 
   }
 
   function stopAutoplay() {
     clearInterval(autoplayInterval);
   }
 
-  // 手動控制時，暫停自動播放再重新啟動
+  
   rightBtn.addEventListener("click", () => {
     nextSlide();
     resetAutoplay();
@@ -237,286 +151,13 @@ window.addEventListener('load', function () {
     startAutoplay();
   }
 
-  // 初始化
+  
   showSlide(currentIndex);
   startAutoplay();
 });
 
 
 
-
-// slider 下
-// window.addEventListener('load', function () {
- 
-
-//   const items = document.querySelectorAll('.Timeph li');
-//   const leftBtn = document.querySelector('.dl');
-//   const rightBtn = document.querySelector('.dr');
-
-//   let currentIndex = 0; // 預設從第 0 個開始
-
-//   function updateDisplay() {
-//     items.forEach((item, index) => {
-//       if (index >= currentIndex && index < currentIndex + 4) {
-//         item.style.display = 'flex'; // 顯示的三個
-//       } else {
-//         item.style.display = 'none'; // 其他隱藏
-//       }
-//     });
-//   }
-
-//   leftBtn.addEventListener('click', () => {
-//     if (currentIndex > 0) {
-//       currentIndex--;
-//       updateDisplay();
-//     }
-//   });
-
-//   rightBtn.addEventListener('click', () => {
-//     if (currentIndex < items.length - 3) {
-//       currentIndex++;
-//       updateDisplay();
-//     }
-//   });
-
-//   // 初始顯示
-//   updateDisplay();
-
-// });
-
-  //=========2
-// window.addEventListener('load', function () {
-//   const items = document.querySelectorAll('.Timeph li');
-//   const leftBtn = document.querySelector('.dl');
-//   const rightBtn = document.querySelector('.dr');
-
-//   let currentIndex = 0;
-
-//   function getVisibleCount() {
-//     return window.innerWidth <= 820 ? 2 : 3;
-//   }
-
-//   function updateDisplay() {
-//     const visibleCount = getVisibleCount();
-//     items.forEach((item, index) => {
-//       if (index >= currentIndex && index < currentIndex + visibleCount) {
-//         item.style.display = 'flex';
-//       } else {
-//         item.style.display = 'none';
-//       }
-//     });
-//   }
-
-//   function handleResize() {
-//     // 確保 currentIndex 不會超過邊界
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex > items.length - visibleCount) {
-//       currentIndex = Math.max(0, items.length - visibleCount);
-//     }
-//     updateDisplay();
-//   }
-
-//   leftBtn.addEventListener('click', () => {
-//     if (currentIndex > 0) {
-//       currentIndex--;
-//       updateDisplay();
-//     }
-//   });
-
-//   rightBtn.addEventListener('click', () => {
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex < items.length - visibleCount) {
-//       currentIndex++;
-//       updateDisplay();
-//     }
-//   });
-
-//   window.addEventListener('resize', handleResize);
-
-//   // 初始化
-//   updateDisplay();
-// });
-
-
-
-
-
-//======3
-// window.addEventListener('load', function () {
-//   const items = document.querySelectorAll('.Timeph li');
-//   const leftBtn = document.querySelector('.dl');
-//   const rightBtn = document.querySelector('.dr');
-
-//   let currentIndex = 0;
-
-//   function getVisibleCount() {
-//     return window.innerWidth <= 820 ? 2 : 3;
-//   }
-
-//   function updateDisplay() {
-//     // ❗ 在 440px 以下，全部顯示，交由 CSS 橫向滑動控制
-//     if (window.innerWidth < 440) {
-//       items.forEach(item => {
-//         item.style.display = 'flex';
-//       });
-//       leftBtn.style.display = 'none';
-//       rightBtn.style.display = 'none';
-//       return;
-//     }
-
-//     const visibleCount = getVisibleCount();
-
-//     // 顯示控制
-//     items.forEach((item, index) => {
-//       if (index >= currentIndex && index < currentIndex + visibleCount) {
-//         item.style.display = 'flex';
-//       } else {
-//         item.style.display = 'none';
-//       }
-//     });
-
-//     // 顯示左右按鈕
-//     leftBtn.style.display = 'block';
-//     rightBtn.style.display = 'block';
-//   }
-
-//   function handleResize() {
-//     const visibleCount = getVisibleCount();
-
-//     if (window.innerWidth < 440) {
-//       currentIndex = 0;
-//       updateDisplay();
-//       return;
-//     }
-
-//     if (currentIndex > items.length - visibleCount) {
-//       currentIndex = Math.max(0, items.length - visibleCount);
-//     }
-//     updateDisplay();
-//   }
-
-//   leftBtn.addEventListener('click', () => {
-//     if (window.innerWidth < 440) return;
-//     if (currentIndex > 0) {
-//       currentIndex--;
-//       updateDisplay();
-//     }
-//   });
-
-//   rightBtn.addEventListener('click', () => {
-//     if (window.innerWidth < 440) return;
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex < items.length - visibleCount) {
-//       currentIndex++;
-//       updateDisplay();
-//     }
-//   });
-
-//   window.addEventListener('resize', handleResize);
-//   updateDisplay(); // 初始化
-// });
-
-
-
-// window.addEventListener('load', function () {
-//   const items = document.querySelectorAll('.Timeph li');
-//   const leftBtn = document.querySelector('.dl');
-//   const rightBtn = document.querySelector('.dr');
-
-//   let currentIndex = 0;
-
-//   function getVisibleCount() {
-//     if (window.innerWidth < 440) return 4;
-//     if (window.innerWidth <= 820) return 2;
-//     return 3;
-//   }
-
-//   function updateDisplay() {
-//     const visibleCount = getVisibleCount();
-
-//     items.forEach((item, index) => {
-//       if (index >= currentIndex && index < currentIndex + visibleCount) {
-//         item.style.display = 'flex';
-//       } else {
-//         item.style.display = 'none';
-//       }
-//     });
-
-//     leftBtn.style.display = 'block';
-//     rightBtn.style.display = 'block';
-//   }
-
-//   function handleResize() {
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex > items.length - visibleCount) {
-//       currentIndex = Math.max(0, items.length - visibleCount);
-//     }
-//     updateDisplay();
-//   }
-
-//   leftBtn.addEventListener('click', () => {
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex > 0) {
-//       currentIndex--;
-//       updateDisplay();
-//     }
-//   });
-
-//   rightBtn.addEventListener('click', () => {
-//     const visibleCount = getVisibleCount();
-//     if (currentIndex < items.length - visibleCount) {
-//       currentIndex++;
-//       updateDisplay();
-//     }
-//   });
-
-//   window.addEventListener('resize', handleResize);
-//   updateDisplay(); // 初始化
-// });
-
-
-
-
-
-// window.addEventListener('load', function () {
-//   const items = document.querySelectorAll('.Timeph li');
-//   const leftBtn = document.querySelector('.dl');
-//   const rightBtn = document.querySelector('.dr');
-
-//   let currentIndex = 0; // 從第 0 個開始
-
-//   const VISIBLE_COUNT = 3; // 一次顯示三個
-
-//   function updateDisplay() {
-//     items.forEach((item, index) => {
-//       if (index >= currentIndex && index < currentIndex + VISIBLE_COUNT) {
-//         item.style.display = 'flex'; // 顯示的三個
-//       } else {
-//         item.style.display = 'none'; // 其他隱藏
-//       }
-//     });
-
-//     // 控制按鈕顯示與否
-//     leftBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
-//     rightBtn.style.visibility = currentIndex + VISIBLE_COUNT >= items.length ? 'hidden' : 'visible';
-//   }
-
-//   leftBtn.addEventListener('click', () => {
-//     if (currentIndex > 0) {
-//       currentIndex--;
-//       updateDisplay();
-//     }
-//   });
-
-//   rightBtn.addEventListener('click', () => {
-//     if (currentIndex + VISIBLE_COUNT < items.length) {
-//       currentIndex++;
-//       updateDisplay();
-//     }
-//   });
-
-//   updateDisplay(); // 初始化畫面
-// });
 
 
 // 限時搶購區
@@ -532,14 +173,14 @@ $(window).on('load resize', function () {
     const width = $(window).width();
 
     if (width < 820) {
-      // 小螢幕直接顯示全部，交由 CSS 滑動控制
+      
       $items.css('display', 'flex');
       $leftBtn.hide();
       $rightBtn.hide();
       return;
     }
 
-    // 大螢幕 (>= 820px)
+    // >= 820px
     const visibleCount = 3;
     $items.each(function (index) {
       if (index >= currentIndex && index < currentIndex + visibleCount) {
@@ -567,6 +208,6 @@ $(window).on('load resize', function () {
     }
   });
 
-  updateDisplay(); // 初始化
+  updateDisplay(); 
 });
 

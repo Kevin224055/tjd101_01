@@ -333,7 +333,7 @@ section.button .fa-heart.red {
 }
 
 
-/* 創建邊框動畫效果 */
+/* 邊框動畫效果 */
 .cart-button::before {
     content: '';
     position: absolute;
@@ -348,12 +348,12 @@ section.button .fa-heart.red {
     /* transition: opacity 0.3s; */
 }
 
-/* hover時顯示動畫 */
+/* hover顯示 */
 .cart-button:hover::before {
     opacity: 1;
 }
 
-/* 邊框動畫 keyframes */
+/*  keyframes */
 @keyframes border-shin {
     0% { border-color: #D4BAA3; }
     /* 16% { border-color: #ff7f00; }
@@ -374,7 +374,7 @@ section.button .fa-heart.red {
 
    
 
-    /* main 內部區塊寬度全滿 */
+    
     .productinfo, .productdetail, .conectproduct {
       width: 100%;
       flex-direction: column;
@@ -584,7 +584,7 @@ section.button .fa-heart.red {
       text-align: center;
     }
   
-    /* 左右箭頭按鈕可選擇要不要顯示，以下是隱藏它們（如無滑動控制功能） */
+    
     .conectproduct > button {
       display: none;
     }
