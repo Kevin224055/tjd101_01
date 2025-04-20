@@ -7,7 +7,18 @@
 //     })
 //   })
 
+$(function () {
+  $('.hamburger').click(function () {
+    $('.transition').toggleClass('show');
+    $(this).toggleClass('active')
+    $('.overlay').fadeToggle();
+  });
+});
 
+$('.overlay').on('click', function(){
+  $('.transition').removeClass('show');
+  $(this).fadeOut();
+});
 
 
 
