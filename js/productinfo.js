@@ -6,6 +6,16 @@ $(function () {
 
 
 
+  $(function(){
+    $('.hamburger').click(function(){
+              // $(this).addClass('active')
+              $(this).toggleClass('active')
+          })
+  })
+
+
+
+
 $(document).ready(function () {
     
   

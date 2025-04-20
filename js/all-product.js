@@ -17,6 +17,14 @@ $(function(){
 
 
 
+
+$(function(){
+  $('.hamburger').click(function(){
+            // $(this).addClass('active')
+            $(this).toggleClass('active')
+        })
+})
+
 // 導覽列
 
 $(function () {

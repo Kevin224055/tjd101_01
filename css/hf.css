@@ -44,6 +44,12 @@ h1{
     display: none;
 }
 
+
+        .hamburger.active .bar1{transform: rotate(-45deg) translate(-9px, 7px);}
+        .hamburger.active .bar2{opacity: 0;}
+        .hamburger.active .bar3{transform: rotate(45deg) translate(-9px, -8px);}
+
+
 nav{
    
     max-width: 1200px;
