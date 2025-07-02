@@ -172,7 +172,7 @@ $(window).on('load resize', function () {
   function updateDisplay() {
     const width = $(window).width();
 
-    if (width < 820) {
+    if (width <= 820) {
       
       $items.css('display', 'flex');
       $leftBtn.hide();
